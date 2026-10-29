@@ -1,0 +1,87 @@
+{
+  "baner": {
+    "zdjecie": "/pliki/baner/kampus-zmierzch.jpg",
+    "zdjecie_male": "/pliki/baner/kampus-zmierzch-1200.jpg",
+    "opis": "Kampus przy placu Grunwaldzkim o zmierzchu: budynki Instytutu, drzewa, Most Grunwaldzki i Odra",
+    "podpis": "Fot. fotopolska.eu",
+    "kadr": "center 40%"
+  },
+  "logo": "",
+  "wstep": "Badania, seminaria i studia matematyczne na Wydziale Matematyki i Informatyki Uniwersytetu Wrocławskiego.",
+  "wstep_en": "Research, seminars and mathematics programmes at the Faculty of Mathematics and Computer Science, University of Wrocław.",
+  "przyciski": [
+    {
+      "etykieta": "Dla kandydatów",
+      "etykieta_en": "Prospective students",
+      "adres": "https://studia-wmi.uwr.edu.pl/"
+    },
+    {
+      "etykieta": "Dla studentów",
+      "etykieta_en": "Students",
+      "adres": "/studia"
+    },
+    {
+      "etykieta": "Dla naukowców",
+      "etykieta_en": "Researchers",
+      "adres": "/nauka"
+    }
+  ],
+  "studia": {
+    "tytul": "Studiuj matematykę we Wrocławiu",
+    "tytul_en": "Study mathematics in Wrocław",
+    "opis": "Studia I, II i III stopnia oraz studia podyplomowe.",
+    "opis_en": "Bachelor's, master's and doctoral studies, plus postgraduate programmes.",
+    "rekrutacja": "https://studia-wmi.uwr.edu.pl/",
+    "kierunki": [
+      {
+        "poziom": "Podyplomowe",
+        "poziom_en": "Postgraduate",
+        "nazwa": "Nauczanie matematyki",
+        "nazwa_en": "Teaching mathematics",
+        "opis": "Studia kwalifikacyjne, 3 semestry.",
+        "opis_en": "Qualification programme, 3 semesters.",
+        "adres": "/studia/podyplomowe"
+      }
+    ]
+  },
+  "kontakt": {
+    "adres": "pl. Grunwaldzki 2, 50-384 Wrocław",
+    "telefon": "+48 71 375 74 01",
+    "email": "dyrekcja@math.uni.wroc.pl"
+  },
+  "facebook": "https://www.facebook.com/IMUWr",
+  "youtube": "https://www.youtube.com/channel/UCO0NMxdgMe2ZISJAbEcKH4w",
+  "archiwum": "https://www.math.uni.wroc.pl/",
+  "partnerzy": [],
+  "powiadomienia": {
+    "adres": ""
+  },
+  "tlo_strony": "fale",
+  "wydarzenia_dni_robocze": 5,
+  "sekcje": "linia",
+  "naglowki_podstron": {
+    "wariant": "granat",
+    "zdjecia": {
+      "instytut": {
+        "zdjecie": "/pliki/naglowki/instytut.jpg",
+        "kadr": "center 45%"
+      },
+      "nauka": {
+        "zdjecie": "/pliki/naglowki/nauka.jpg",
+        "kadr": "center 40%"
+      },
+      "studia": {
+        "zdjecie": "/pliki/naglowki/studia.jpg",
+        "kadr": "center 35%"
+      },
+      "aktualnosci": {
+        "zdjecie": "/pliki/naglowki/aktualnosci.jpg",
+        "kadr": "center 40%"
+      },
+      "popularyzacja": {
+        "zdjecie": "/pliki/naglowki/popularyzacja.jpg",
+        "kadr": "center 50%"
+      }
+    }
+  }
+}

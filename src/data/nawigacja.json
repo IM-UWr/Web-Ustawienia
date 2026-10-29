@@ -1,0 +1,220 @@
+{
+  "menu": [
+    {
+      "etykieta": "Instytut",
+      "etykieta_en": "Institute",
+      "grupy": [
+        {
+          "nazwa": "Ludzie",
+          "nazwa_en": "People",
+          "linki": [
+            {
+              "etykieta": "Władze",
+              "etykieta_en": "Management",
+              "adres": "/instytut/wladze"
+            },
+            {
+              "etykieta": "Pracownicy",
+              "etykieta_en": "Staff",
+              "adres": "/pracownicy"
+            }
+          ]
+        },
+        {
+          "nazwa": "Organizacja",
+          "nazwa_en": "Organisation",
+          "linki": [
+            {
+              "etykieta": "Struktura i zakłady",
+              "etykieta_en": "Structure and departments",
+              "adres": "/instytut/struktura"
+            },
+            {
+              "etykieta": "Kontakt",
+              "etykieta_en": "Contact",
+              "adres": "/instytut/kontakt"
+            }
+          ]
+        },
+        {
+          "nazwa": "Więcej",
+          "nazwa_en": "More",
+          "linki": [
+            {
+              "etykieta": "Infrastruktura informatyczna",
+              "etykieta_en": "IT infrastructure",
+              "adres": "/instytut/infrastruktura-informatyczna"
+            },
+            {
+              "etykieta": "Biblioteka",
+              "etykieta_en": "Library",
+              "adres": "https://wmi.uwr.edu.pl/biblioteka-wydzialowa/"
+            }
+          ]
+        }
+      ],
+      "adres": "/instytut"
+    },
+    {
+      "etykieta": "Nauka",
+      "etykieta_en": "Research",
+      "grupy": [
+        {
+          "nazwa": "Wydarzenia naukowe",
+          "nazwa_en": "Research events",
+          "linki": [
+            {
+              "etykieta": "Seminaria",
+              "etykieta_en": "Seminars",
+              "adres": "/seminaria"
+            },
+            {
+              "etykieta": "Konferencje",
+              "etykieta_en": "Conferences",
+              "adres": "/nauka/konferencje"
+            },
+            {
+              "etykieta": "Obrony doktorskie",
+              "etykieta_en": "PhD defences",
+              "adres": "/obrony-doktorskie"
+            }
+          ]
+        },
+        {
+          "nazwa": "Badania",
+          "nazwa_en": "Research",
+          "linki": [
+            {
+              "etykieta": "Projekty i granty",
+              "etykieta_en": "Grants",
+              "adres": "/nauka/granty"
+            },
+            {
+              "etykieta": "Publikacje",
+              "etykieta_en": "Publications",
+              "adres": "/nauka/publikacje"
+            },
+            {
+              "etykieta": "Sukcesy",
+              "etykieta_en": "Achievements",
+              "adres": "/nauka/sukcesy"
+            }
+          ]
+        },
+        {
+          "nazwa": "Stopnie naukowe",
+          "nazwa_en": "Degrees",
+          "linki": [
+            {
+              "etykieta": "Szkoła doktorska",
+              "etykieta_en": "Doctoral school",
+              "adres": "/studia/szkola-doktorska"
+            },
+            {
+              "etykieta": "Rada Dyscypliny Matematyka",
+              "etykieta_en": "Mathematics Discipline Council",
+              "adres": "https://bip.uni.wroc.pl/1436/237/sklad-rady-dyscypliny-naukowej-matematyka.html"
+            }
+          ]
+        }
+      ],
+      "adres": "/nauka"
+    },
+    {
+      "etykieta": "Studia",
+      "etykieta_en": "Study",
+      "grupy": [
+        {
+          "nazwa": "Kierunki",
+          "nazwa_en": "Programmes",
+          "linki": [
+            {
+              "etykieta": "Studia podyplomowe",
+              "etykieta_en": "Postgraduate studies",
+              "adres": "/studia/podyplomowe"
+            }
+          ],
+          "kierunki": true
+        },
+        {
+          "nazwa": "Na co dzień",
+          "nazwa_en": "Everyday",
+          "linki": [
+            {
+              "etykieta": "Plan zajęć",
+              "etykieta_en": "Timetable",
+              "adres": "/studia/plan-zajec"
+            },
+            {
+              "etykieta": "Rok akademicki",
+              "etykieta_en": "Academic year",
+              "adres": "/studia/rok-akademicki"
+            },
+            {
+              "etykieta": "Zajęcia i konsultacje",
+              "etykieta_en": "Classes and office hours",
+              "adres": "/studia/zajecia"
+            },
+            {
+              "etykieta": "Pierwszy rok",
+              "etykieta_en": "First year",
+              "adres": "/studia/pierwszy-rok"
+            },
+            {
+              "etykieta": "USOSweb",
+              "etykieta_en": "USOSweb",
+              "adres": "https://usosweb.uwr.edu.pl/"
+            }
+          ]
+        },
+        {
+          "nazwa": "Dyplom i sprawy",
+          "nazwa_en": "Diploma and student affairs",
+          "linki": [
+            {
+              "etykieta": "Egzaminy i dyplom",
+              "etykieta_en": "Exams and diploma",
+              "adres": "/studia/egzaminy-i-dyplom"
+            },
+            {
+              "etykieta": "Procedura dyplomowania",
+              "etykieta_en": "Diploma procedure",
+              "adres": "/studia/procedura-dyplomowania"
+            },
+            {
+              "etykieta": "Sprawy studenckie",
+              "etykieta_en": "Student affairs",
+              "adres": "/studia/sprawy-studenckie"
+            },
+            {
+              "etykieta": "Program MOST",
+              "etykieta_en": "MOST programme",
+              "adres": "/studia/program-most"
+            },
+            {
+              "etykieta": "Skrypty i materiały",
+              "etykieta_en": "Lecture notes and materials",
+              "adres": "/studia/skrypty"
+            }
+          ]
+        }
+      ],
+      "adres": "/studia"
+    },
+    {
+      "etykieta": "Aktualności",
+      "etykieta_en": "News",
+      "adres": "/aktualnosci"
+    },
+    {
+      "etykieta": "Popularyzacja",
+      "etykieta_en": "Outreach",
+      "adres": "/popularyzacja"
+    },
+    {
+      "etykieta": "Rekrutacja",
+      "etykieta_en": "Admissions",
+      "adres": "https://studia-wmi.uwr.edu.pl/"
+    }
+  ]
+}

@@ -1,0 +1,562 @@
+# Pages CMS — Web-Ustawienia: Ustawienia całej strony: menu, stopka, skróty, baner, nagłówki działów, tło i sekcje, deklaracja dostępności, polityka prywatności.
+# Wygenerowane przy migracji z Avean/IM-Website-test; pola „Opublikowany” usunięte (bez wersji roboczych).
+media:
+  input: public/pliki
+  output: /pliki
+  rename: safe
+settings:
+  commit:
+    identity: user
+content:
+- name: ustawienia-grupa
+  label: Ustawienia strony
+  type: group
+  items:
+  - name: ustawienia
+    label: Strona główna i kontakt
+    type: file
+    path: src/data/ustawienia.json
+    format: json
+    fields:
+    - name: baner
+      label: Baner na stronie głównej
+      type: object
+      fields:
+      - name: zdjecie
+        label: Zdjęcie (poziome, ok. 2400 px szerokości)
+        type: image
+        options:
+          path: public/pliki/baner
+      - name: zdjecie_male
+        label: Mniejsza wersja na telefony (opcjonalnie, ok. 1200 px)
+        type: image
+        options:
+          path: public/pliki/baner
+      - name: opis
+        label: Opis zdjęcia (dla niewidomych)
+        type: string
+      - name: podpis
+        label: Podpis (np. Fot. Jan Kowalski)
+        type: string
+      - name: kadr
+        label: Kadrowanie (np. center 55%)
+        type: string
+    - name: logo
+      label: Logo w nagłówku (opcjonalnie)
+      type: image
+      options:
+        path: public/pliki
+    - name: tlo_strony
+      label: Tło strony
+      type: select
+      default: zmierzch
+      options:
+        values:
+        - name: zmierzch
+          label: Zmierzch
+        - name: pole
+          label: Pole kierunków
+        - name: kratka
+          label: Kratka / tablica
+        - name: penrose
+          label: Kafelkowanie Penrose'a
+        - name: fale
+          label: Fale (izolinie)
+        - name: brak
+          label: Brak (białe)
+    - name: sekcje
+      label: Oddzielanie sekcji
+      type: select
+      default: pasy
+      options:
+        values:
+        - name: pasy
+          label: Pasy
+        - name: linia
+          label: Linia
+        - name: karty
+          label: Karty
+        - name: brak
+          label: Brak
+    - name: naglowki_podstron
+      label: Nagłówki podstron
+      type: object
+      fields:
+      - name: wariant
+        label: Wygląd
+        type: select
+        default: granat
+        options:
+          values:
+          - name: granat
+            label: Granatowy pas
+          - name: zdjecie
+            label: Zdjęcie w ramce
+          - name: motyw
+            label: Sam rysunek
+          - name: prosty
+            label: Prosty
+      - name: zdjecia
+        label: Zdjęcia działów (puste = sam rysunek)
+        type: object
+        fields:
+        - name: instytut
+          label: Instytut
+          type: object
+          fields:
+          - name: zdjecie
+            label: Zdjęcie
+            type: image
+            options:
+              path: public/pliki/naglowki
+          - name: kadr
+            label: Kadr (np. center 40%)
+            type: string
+        - name: nauka
+          label: Nauka
+          type: object
+          fields:
+          - name: zdjecie
+            label: Zdjęcie
+            type: image
+            options:
+              path: public/pliki/naglowki
+          - name: kadr
+            label: Kadr (np. center 40%)
+            type: string
+        - name: studia
+          label: Studia
+          type: object
+          fields:
+          - name: zdjecie
+            label: Zdjęcie
+            type: image
+            options:
+              path: public/pliki/naglowki
+          - name: kadr
+            label: Kadr (np. center 40%)
+            type: string
+        - name: aktualnosci
+          label: Aktualności
+          type: object
+          fields:
+          - name: zdjecie
+            label: Zdjęcie
+            type: image
+            options:
+              path: public/pliki/naglowki
+          - name: kadr
+            label: Kadr (np. center 40%)
+            type: string
+        - name: popularyzacja
+          label: Popularyzacja
+          type: object
+          fields:
+          - name: zdjecie
+            label: Zdjęcie
+            type: image
+            options:
+              path: public/pliki/naglowki
+          - name: kadr
+            label: Kadr (np. center 40%)
+            type: string
+    - name: wydarzenia_dni_robocze
+      label: 'Wydarzenia na stronie głównej: ile dni roboczych przed początkiem się pojawiają (sekcja znika, gdy nic nie ma)'
+      type: number
+      default: 5
+    - name: wstep
+      label: Tekst pod nazwą Instytutu
+      type: text
+    - name: wstep_en
+      label: 'EN: tekst pod nazwą'
+      type: text
+    - name: przyciski
+      label: Przyciski pod tekstem
+      type: object
+      list: true
+      fields:
+      - name: etykieta
+        label: Etykieta
+        type: string
+      - name: etykieta_en
+        label: 'EN: etykieta'
+        type: string
+      - name: adres
+        label: Adres
+        type: string
+    - name: studia
+      label: Sekcja „Studiuj matematykę”
+      type: object
+      fields:
+      - name: tytul
+        label: Tytuł
+        type: string
+      - name: tytul_en
+        label: 'EN: tytuł'
+        type: string
+      - name: opis
+        label: Opis
+        type: string
+      - name: opis_en
+        label: 'EN: opis'
+        type: string
+      - name: rekrutacja
+        label: Link do rekrutacji
+        type: string
+      - name: kierunki
+        label: Dodatkowe kafelki (np. studia podyplomowe) — kierunki studiów pojawiają się same, z sekcji Kierunki
+        type: object
+        list: true
+        fields:
+        - name: poziom
+          label: Poziom (np. I i II stopień)
+          type: string
+        - name: poziom_en
+          label: 'EN: poziom'
+          type: string
+        - name: nazwa
+          label: Nazwa
+          type: string
+        - name: nazwa_en
+          label: 'EN: nazwa'
+          type: string
+        - name: opis
+          label: Opis
+          type: string
+        - name: opis_en
+          label: 'EN: opis'
+          type: string
+        - name: adres
+          label: Adres
+          type: string
+    - name: kontakt
+      label: Dane kontaktowe (stopka)
+      type: object
+      fields:
+      - name: adres
+        label: Adres
+        type: string
+      - name: telefon
+        label: Telefon
+        type: string
+      - name: email
+        label: E-mail
+        type: string
+    - name: facebook
+      label: Facebook
+      type: string
+    - name: youtube
+      label: YouTube
+      type: string
+    - name: archiwum
+      label: Adres archiwum starej strony
+      type: string
+    - name: powiadomienia
+      label: Powiadomienia e-mail o referatach
+      type: object
+      fields:
+      - name: adres
+        label: Adres automatu listy mailingowej (Google Apps Script, …/exec; puste = zapisy wyłączone)
+        type: string
+    - name: partnerzy
+      label: Partnerzy (logotypy w stopce)
+      type: object
+      list: true
+      fields:
+      - name: nazwa
+        label: Nazwa
+        type: string
+      - name: logo
+        label: Logo
+        type: image
+        options:
+          path: public/pliki/partnerzy
+      - name: adres
+        label: Strona partnera
+        type: string
+  - name: skroty
+    label: Kafelki „Na skróty”
+    type: file
+    path: src/data/skroty.json
+    format: json
+    fields:
+    - name: kafelki
+      label: Kafelki
+      type: object
+      list: true
+      fields:
+      - name: etykieta
+        label: Etykieta
+        type: string
+      - name: etykieta_en
+        label: 'EN: etykieta'
+        type: string
+      - name: adres
+        label: Adres (np. /pracownicy albo https://…)
+        type: string
+      - name: ikona
+        label: Ikona
+        type: select
+        options:
+          values:
+          - name: kalendarz
+            label: Kalendarz
+          - name: zegar
+            label: Zegar
+          - name: ludzie
+            label: Ludzie
+          - name: tablica
+            label: Tablica
+          - name: flaga
+            label: Flaga
+          - name: zewnetrzny
+            label: Link zewnętrzny
+          - name: czapka
+            label: Czapka absolwenta
+          - name: plik
+            label: Dokument
+          - name: mail
+            label: Koperta
+  - name: nawigacja
+    label: Menu główne
+    type: file
+    path: src/data/nawigacja.json
+    format: json
+    fields:
+    - name: menu
+      label: Pozycje menu
+      type: object
+      list: true
+      fields:
+      - name: etykieta
+        label: Etykieta
+        type: string
+      - name: etykieta_en
+        label: 'EN: etykieta'
+        type: string
+      - name: adres
+        label: Adres (klik w napis; przy pozycji z rozwijaną listą — strona działu, np. /instytut)
+        type: string
+      - name: grupy
+        label: Grupy w rozwijanym menu
+        type: object
+        list: true
+        fields:
+        - name: nazwa
+          label: Nazwa grupy
+          type: string
+        - name: nazwa_en
+          label: 'EN: nazwa grupy'
+          type: string
+        - name: kierunki
+          label: Na początku grupy wstaw automatycznie kierunki studiów (z sekcji Kierunki)
+          type: boolean
+        - name: linki
+          label: Linki
+          type: object
+          list: true
+          fields:
+          - name: etykieta
+            label: Etykieta
+            type: string
+          - name: etykieta_en
+            label: 'EN: etykieta'
+            type: string
+          - name: adres
+            label: Adres
+            type: string
+  - name: stopka
+    label: Stopka
+    type: file
+    path: src/data/stopka.json
+    format: json
+    fields:
+    - name: kolumny
+      label: Kolumny
+      type: object
+      list: true
+      fields:
+      - name: tytul
+        label: Tytuł kolumny
+        type: string
+      - name: tytul_en
+        label: 'EN: tytuł'
+        type: string
+      - name: linki
+        label: Linki
+        type: object
+        list: true
+        fields:
+        - name: etykieta
+          label: Etykieta
+          type: string
+        - name: etykieta_en
+          label: 'EN: etykieta'
+          type: string
+        - name: adres
+          label: Adres
+          type: string
+  - name: dzial-instytut
+    label: Strona działu „Instytut”
+    description: Teksty na stronie /instytut. Liczby, kafelki (z menu „Instytut”), zakłady i sukcesy budują się same z danych.
+    type: file
+    path: src/data/dzialy/instytut.json
+    format: json
+    fields:
+    - name: wstep
+      label: Wstęp pod tytułem (1–3 zdania)
+      type: text
+    - name: wstep_en
+      label: 'EN: wstęp'
+      type: text
+    - name: zaklady_opis
+      label: Zdanie nad kartami zakładów (opcjonalnie)
+      type: text
+    - name: zaklady_opis_en
+      label: 'EN: zdanie nad kartami zakładów'
+      type: text
+    - name: sukcesy_opis
+      label: Zdanie nad ostatnimi sukcesami (opcjonalnie)
+      type: text
+    - name: sukcesy_opis_en
+      label: 'EN: zdanie nad sukcesami'
+      type: text
+    - name: kontakt_godziny
+      label: Godziny pracy sekretariatu (opcjonalnie — puste = nie wyświetla się)
+      type: string
+    - name: kontakt_godziny_en
+      label: 'EN: godziny pracy sekretariatu'
+      type: string
+  - name: dzial-nauka
+    label: Strona działu „Nauka”
+    description: Teksty na stronie /nauka. Liczby, kafelki (z menu „Nauka”), obszary badań (z zakładów), seminaria, konferencje, projekty i obrony budują się same
+      z danych.
+    type: file
+    path: src/data/dzialy/nauka.json
+    format: json
+    fields:
+    - name: wstep
+      label: Wstęp pod tytułem (1–3 zdania)
+      type: text
+    - name: wstep_en
+      label: 'EN: wstęp'
+      type: text
+    - name: obszary_opis
+      label: Zdanie nad kartami „Obszary badań” (opcjonalnie)
+      type: text
+    - name: obszary_opis_en
+      label: 'EN: zdanie nad obszarami badań'
+      type: text
+  - name: dzial-studia
+    label: Strona działu „Studia”
+    description: Teksty na stronie /studia. Kierunki, liczby, ścieżki (z menu „Studia”), aktualności i kontakt budują się same z danych.
+    type: file
+    path: src/data/dzialy/studia.json
+    format: json
+    fields:
+    - name: wstep
+      label: Wstęp pod tytułem (1–3 zdania)
+      type: text
+    - name: wstep_en
+      label: 'EN: wstęp'
+      type: text
+    - name: chce_studiowac
+      label: Opis ścieżki „Chcę studiować”
+      type: string
+    - name: chce_studiowac_en
+      label: 'EN: opis ścieżki „Chcę studiować”'
+      type: string
+    - name: juz_studiuje
+      label: Opis ścieżki „Już studiuję”
+      type: string
+    - name: juz_studiuje_en
+      label: 'EN: opis ścieżki „Już studiuję”'
+      type: string
+    - name: sekretariat_zakres
+      label: 'Kontakt: czym zajmuje się sekretariat dydaktyczny'
+      type: string
+    - name: sekretariat_zakres_en
+      label: 'EN: zakres sekretariatu'
+      type: string
+- name: deklaracja
+  label: Deklaracja dostępności
+  type: file
+  path: src/content/strony/deklaracja-dostepnosci.md
+  format: yaml-frontmatter
+  fields:
+  - name: tytul
+    label: Tytuł
+    type: string
+    required: true
+  - name: opis
+    label: Krótki opis (pod tytułem i w Google)
+    type: text
+  - name: pasek_boczny
+    label: 'Prawy pasek: spis „Na tej stronie”, menu działu czy oba (puste = domyślnie tylko spis)'
+    type: select
+    options:
+      values:
+      - name: oba
+        label: Oba (spis i menu działu)
+      - name: spis
+        label: Tylko spis „Na tej stronie”
+      - name: menu
+        label: Tylko menu działu (podstrony)
+      - name: brak
+        label: Bez prawego paska (strona na całą szerokość)
+  - name: body
+    label: Treść
+    type: rich-text
+    options:
+      format: markdown
+      path: public/pliki/ustawienia
+  - name: tytul_en
+    label: 'EN: tytuł'
+    type: string
+  - name: opis_en
+    label: 'EN: opis'
+    type: text
+  - name: tresc_en
+    label: 'EN: treść (Markdown)'
+    type: text
+- name: prywatnosc
+  label: Polityka prywatności
+  type: file
+  path: src/content/strony/polityka-prywatnosci.md
+  format: yaml-frontmatter
+  fields:
+  - name: tytul
+    label: Tytuł
+    type: string
+    required: true
+  - name: opis
+    label: Krótki opis (pod tytułem i w Google)
+    type: text
+  - name: pasek_boczny
+    label: 'Prawy pasek: spis „Na tej stronie”, menu działu czy oba (puste = domyślnie tylko spis)'
+    type: select
+    options:
+      values:
+      - name: oba
+        label: Oba (spis i menu działu)
+      - name: spis
+        label: Tylko spis „Na tej stronie”
+      - name: menu
+        label: Tylko menu działu (podstrony)
+      - name: brak
+        label: Bez prawego paska (strona na całą szerokość)
+  - name: body
+    label: Treść
+    type: rich-text
+    options:
+      format: markdown
+      path: public/pliki/ustawienia
+  - name: tytul_en
+    label: 'EN: tytuł'
+    type: string
+  - name: opis_en
+    label: 'EN: opis'
+    type: text
+  - name: tresc_en
+    label: 'EN: treść (Markdown)'
+    type: text
