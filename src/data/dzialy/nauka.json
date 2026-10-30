@@ -6,23 +6,23 @@
   "badania_fakty": [
     {
       "wartosc": "A+",
-      "opis": "kategoria naukowa matematyki na UWr w ewaluacji 2022–2025",
-      "opis_en": "research category of mathematics at UWr in the 2022–2025 evaluation"
-    },
-    {
-      "wartosc": "8",
-      "opis": "zakładów naukowych, każdy z własnym seminarium",
-      "opis_en": "research departments, each with its own seminar"
+      "opis": "najwyższa kategoria naukowa matematyki na Uniwersytecie Wrocławskim",
+      "opis_en": "the highest research category for mathematics at the University of Wrocław"
     },
     {
       "wartosc": "1947",
-      "opis": "pierwszy tom Colloquium Mathematicum, redagowanego w Instytucie",
-      "opis_en": "first volume of Colloquium Mathematicum, edited at the Institute"
+      "opis": "od tego roku ukazuje się Colloquium Mathematicum, redagowane w Instytucie",
+      "opis_en": "Colloquium Mathematicum, edited at the Institute, has been published since this year"
     },
     {
-      "wartosc": "ICM 2026",
-      "opis": "zaproszony wykład prof. Mariusza Mirka na Międzynarodowym Kongresie Matematyków",
-      "opis_en": "Prof. Mariusz Mirek’s invited lecture at the International Congress of Mathematicians"
+      "wartosc": "NCN",
+      "opis": "większość projektów badawczych finansuje Narodowe Centrum Nauki",
+      "opis_en": "most research projects are funded by the National Science Centre"
+    },
+    {
+      "wartosc": "Seminaria",
+      "opis": "każdy zakład prowadzi własne seminarium badawcze",
+      "opis_en": "each department runs its own research seminar"
     }
   ],
   "seminaria_tekst": "Seminaria naukowe są stałą częścią pracy badawczej w Instytucie: przedstawia się na nich i omawia nowe wyniki oraz prace w toku. Każdy zakład naukowy prowadzi własne seminarium, które spotyka się regularnie w ciągu roku akademickiego. Referaty wygłaszają pracownicy i doktoranci Instytutu, a także goście z innych ośrodków w kraju i za granicą — po polsku lub po angielsku.\n\nTermin i salę podajemy przy każdym referacie, ponieważ mogą się zmieniać. Na stronie seminarium można znaleźć koordynatorów, zapowiedzi referatów ze streszczeniami i archiwum wcześniejszych spotkań; wszystkie referaty są też w kalendarzu Instytutu. Serdecznie zapraszamy studentów — seminarium to dobra okazja, by poznać tematykę badań zakładu — a także gości spoza Uniwersytetu. Seminaria magisterskie, prowadzone w ramach studiów, opisujemy w dziale Studia.",

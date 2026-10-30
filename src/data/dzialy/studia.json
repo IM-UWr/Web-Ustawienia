@@ -5,19 +5,19 @@
   "o_studiach_en": "We teach mathematics the way we practise it: classes are taught by active researchers, and the tutoring room and the year coordinator help you get started. Mathematics offers five specialisations, while those drawn to data and algorithms may prefer Artificial Intelligence in Data Science or ISIM, run jointly with the Institute of Computer Science. We welcome graduates to the Doctoral College of Mathematics of the UWr Doctoral School, and teachers to our postgraduate studies.",
   "o_studiach_fakty": [
     {
-      "wartosc": "A+",
-      "opis": "najwyższa kategoria naukowa matematyki (ewaluacja 2022–2025)",
-      "opis_en": "top research category for mathematics (2022–2025 evaluation)"
-    },
-    {
       "wartosc": "PKA",
-      "opis": "ocena wyróżniająca dla kierunku matematyka (2018)",
-      "opis_en": "Polish Accreditation Committee distinction for mathematics (2018)"
+      "opis": "ocena wyróżniająca Polskiej Komisji Akredytacyjnej dla kierunku matematyka",
+      "opis_en": "Polish Accreditation Committee distinction for the mathematics programme"
     },
     {
       "wartosc": "Erasmus+",
       "opis": "i MOST — semestr lub rok na innej uczelni",
       "opis_en": "and MOST — a semester or a year at another university"
+    },
+    {
+      "wartosc": "Tutornia",
+      "opis": "starsi studenci pomagają osobom z pierwszego roku",
+      "opis_en": "older students help first-year students"
     }
   ],
   "sekretariat_zakres": "Zapisy i wypisy z zajęć, plan zajęć, deklaracje wyboru specjalności i promotora.",
