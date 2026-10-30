@@ -435,6 +435,12 @@ content:
     - name: sukcesy_opis_en
       label: 'EN: zdanie nad sukcesami'
       type: text
+    - name: struktura_tekst
+      label: Strona „Struktura i zakłady” — tekst nad kartami zakładów (akapity oddziel pustą linią; puste = bez tekstu)
+      type: text
+    - name: struktura_tekst_en
+      label: 'EN: tekst nad kartami zakładów'
+      type: text
     - name: kontakt_godziny
       label: Godziny pracy sekretariatu (opcjonalnie — puste = nie wyświetla się)
       type: string
