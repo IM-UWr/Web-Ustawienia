@@ -209,6 +209,29 @@
     {
       "etykieta": "Popularyzacja",
       "etykieta_en": "Outreach",
+      "grupy": [
+        {
+          "nazwa": "Partnerzy",
+          "nazwa_en": "Partners",
+          "linki": [
+            {
+              "etykieta": "Fundacja Matematyków Wrocławskich",
+              "etykieta_en": "Wrocław Mathematicians Foundation",
+              "adres": "https://fmw.math.uni.wroc.pl/"
+            },
+            {
+              "etykieta": "Wrocławski Portal Matematyczny",
+              "etykieta_en": "Wrocław Mathematical Portal",
+              "adres": "https://www.matematyka.wroc.pl/"
+            },
+            {
+              "etykieta": "Wrocławski Oddział PTM",
+              "etykieta_en": "Polish Mathematical Society, Wrocław Branch",
+              "adres": "https://ptm.math.uni.wroc.pl/"
+            }
+          ]
+        }
+      ],
       "adres": "/popularyzacja"
     },
     {
