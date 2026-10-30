@@ -3,6 +3,28 @@
   "wstep_en": "The Mathematical Institute is part of the Faculty of Mathematics and Computer Science of the University of Wrocław. We conduct research and seminars and offer bachelor's, master's, doctoral and postgraduate studies. Mathematics at the University of Wrocław has received the highest research category, A+.",
   "o_instytucie": "Instytut Matematyczny Uniwersytetu Wrocławskiego wyrasta z tradycji lwowskiej szkoły matematycznej. Po 1945 roku wrocławską matematykę budowali od podstaw m.in. Hugo Steinhaus, Edward Marczewski, Bronisław Knaster i Władysław Ślebodziński. To tutaj Steinhaus rozpoczął Nową Księgę Szkocką — kontynuację słynnego lwowskiego zbioru problemów — a Wrocław szybko stał się jednym z najważniejszych ośrodków matematycznych w Polsce.\n\nDziś badania prowadzimy w ośmiu zakładach naukowych: algebry i teorii modeli, analizy funkcjonalnej, analizy matematycznej, geometrii, równań różniczkowych, teorii mnogości i topologii, teorii prawdopodobieństwa oraz statystyki. Współpracujemy z ośrodkami w kraju i za granicą, realizujemy projekty Narodowego Centrum Nauki i programów europejskich, a nasze prace ukazują się w czołowych czasopismach matematycznych. W ewaluacji działalności naukowej dyscyplina matematyka na Uniwersytecie Wrocławskim ponownie otrzymała najwyższą kategorię A+.\n\nKształcimy na wszystkich poziomach. Prowadzimy studia I i II stopnia na kierunku matematyka z pięcioma specjalnościami, studia I stopnia na kierunku sztuczna inteligencja w analizie danych oraz — wspólnie z Instytutem Informatyki — Indywidualne Studia Informatyczno-Matematyczne. Doktoranci przygotowują rozprawy w Kolegium Doktorskim Matematyki Szkoły Doktorskiej UWr, a nauczyciele mogą zdobyć kwalifikacje na studiach podyplomowych.\n\nPracownia Dydaktyki i Popularyzacji Matematyki dba o kształcenie przyszłych nauczycieli i kontakt ze szkołami, a cały Instytut chętnie otwiera się na gości: organizujemy seminaria, konferencje i wykłady otwarte. Zapraszamy do współpracy, na nasze seminaria i do studiowania matematyki we Wrocławiu.",
   "o_instytucie_en": "The Mathematical Institute of the University of Wrocław grows out of the tradition of the Lwów School of Mathematics. After 1945, mathematics in Wrocław was built from scratch by Hugo Steinhaus, Edward Marczewski, Bronisław Knaster and Władysław Ślebodziński, among others. It was here that Steinhaus started the New Scottish Book — a continuation of the famous Lwów collection of problems — and Wrocław soon became one of the leading centres of mathematics in Poland.\n\nToday we carry out research in eight departments: algebra and model theory, functional analysis, mathematical analysis, geometry, differential equations, set theory and topology, probability theory, and statistics. We collaborate with centres in Poland and abroad, run projects funded by the National Science Centre and European programmes, and publish in leading mathematical journals. In the evaluation of research activity, mathematics at the University of Wrocław once again received the highest category, A+.\n\nWe teach at every level. We offer bachelor's and master's studies in mathematics with five specialisations, bachelor's studies in artificial intelligence in data science and — together with the Institute of Computer Science — Individual Studies in Computer Science and Mathematics. Doctoral students prepare their dissertations in the Doctoral College of Mathematics of the UWr Doctoral School, and teachers can gain qualifications in our postgraduate programme.\n\nThe Mathematics Education and Outreach Unit looks after teacher training and links with schools, and the whole Institute is open to visitors: we organise seminars, conferences and public lectures. We welcome you to work with us, to attend our seminars and to study mathematics in Wrocław.",
+  "o_instytucie_fakty": [
+    {
+      "wartosc": "1945",
+      "opis": "początek matematyki na Uniwersytecie Wrocławskim",
+      "opis_en": "the beginning of mathematics at the University of Wrocław"
+    },
+    {
+      "wartosc": "A+",
+      "opis": "najwyższa kategoria naukowa w ewaluacji 2022–2025",
+      "opis_en": "the highest research category in the 2022–2025 evaluation"
+    },
+    {
+      "wartosc": "8",
+      "opis": "zakładów naukowych i Pracownia Dydaktyki i Popularyzacji Matematyki",
+      "opis_en": "research departments and the Mathematics Education and Outreach Unit"
+    },
+    {
+      "wartosc": "I–III",
+      "opis": "stopień studiów oraz studia podyplomowe",
+      "opis_en": "bachelor's, master's and doctoral studies, plus postgraduate programmes"
+    }
+  ],
   "sukcesy_opis": "Nagrody, wyróżnienia, granty i stypendia pracowników, doktorantów, studentów i absolwentów Instytutu.",
   "sukcesy_opis_en": "Prizes, distinctions, grants and scholarships awarded to staff, PhD students, students and graduates of the Institute.",
   "kontakt_godziny": "",

@@ -415,6 +415,20 @@ content:
     - name: o_instytucie_en
       label: 'EN: tekst „O Instytucie”'
       type: text
+    - name: o_instytucie_fakty
+      label: Ramka „W skrócie” obok tekstu „O Instytucie” (komputer; puste = bez ramki)
+      type: object
+      list: true
+      fields:
+      - name: wartosc
+        label: Wartość (krótko, np. 1945, A+, 8)
+        type: string
+      - name: opis
+        label: Opis pod wartością
+        type: string
+      - name: opis_en
+        label: 'EN: opis'
+        type: string
     - name: sukcesy_opis
       label: Zdanie nad ostatnimi sukcesami (opcjonalnie)
       type: text
