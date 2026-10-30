@@ -510,6 +510,12 @@ content:
     - name: publikacje_tekst_en
       label: 'EN: tekst wprowadzający — Publikacje'
       type: text
+    - name: czasopisma_tekst
+      label: Strona „Publikacje” (/nauka/publikacje) — tekst nad sekcją „Czasopisma redagowane w Instytucie” (akapity oddziel pustą linią; puste = bez tekstu)
+      type: text
+    - name: czasopisma_tekst_en
+      label: 'EN: tekst nad sekcją „Czasopisma redagowane w Instytucie”'
+      type: text
     - name: sukcesy_tekst
       label: Strona „Sukcesy” (/nauka/sukcesy) — tekst wprowadzający (akapity oddziel pustą linią; puste = bez tekstu)
       type: text
