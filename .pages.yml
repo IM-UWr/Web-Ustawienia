@@ -398,7 +398,7 @@ content:
           type: string
   - name: dzial-instytut
     label: Strona działu „Instytut”
-    description: Teksty na stronie /instytut. Liczby, kafelki (z menu „Instytut”), zakłady i sukcesy budują się same z danych.
+    description: Teksty na stronie /instytut. Liczby, kafelki (z menu „Instytut”) i sukcesy budują się same z danych.
     type: file
     path: src/data/dzialy/instytut.json
     format: json
@@ -409,11 +409,11 @@ content:
     - name: wstep_en
       label: 'EN: wstęp'
       type: text
-    - name: zaklady_opis
-      label: Zdanie nad kartami zakładów (opcjonalnie)
+    - name: o_instytucie
+      label: Tekst „O Instytucie” (kilka zdań; akapity oddziel pustą linią; puste = sekcja się nie wyświetla)
       type: text
-    - name: zaklady_opis_en
-      label: 'EN: zdanie nad kartami zakładów'
+    - name: o_instytucie_en
+      label: 'EN: tekst „O Instytucie”'
       type: text
     - name: sukcesy_opis
       label: Zdanie nad ostatnimi sukcesami (opcjonalnie)
