@@ -6,6 +6,7 @@
   "o_studiach_fakty": [
     {
       "wartosc": "3 kierunki",
+      "wartosc_en": "3 programmes",
       "opis": "matematyka, sztuczna inteligencja w analizie danych i ISIM — a po nich szkoła doktorska",
       "opis_en": "mathematics, Artificial Intelligence in Data Science and ISIM — followed by the doctoral school"
     },
@@ -21,6 +22,7 @@
     },
     {
       "wartosc": "Tutornia",
+      "wartosc_en": "Tutoring room",
       "opis": "starsi studenci pomagają osobom z pierwszego roku",
       "opis_en": "older students help first-year students"
     }

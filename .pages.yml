@@ -423,6 +423,9 @@ content:
       - name: wartosc
         label: Wartość (krótko, np. 1945, A+, 8)
         type: string
+      - name: wartosc_en
+        label: 'EN: wartość (puste = jak po polsku, np. liczby i lata)'
+        type: string
       - name: opis
         label: Opis pod wartością
         type: string
@@ -473,6 +476,9 @@ content:
       fields:
       - name: wartosc
         label: Wartość (krótko, np. A+, 8, 1947)
+        type: string
+      - name: wartosc_en
+        label: 'EN: wartość (puste = jak po polsku, np. liczby i lata)'
         type: string
       - name: opis
         label: Opis pod wartością
@@ -548,6 +554,9 @@ content:
       fields:
       - name: wartosc
         label: Wartość (krótko, np. A+, PKA)
+        type: string
+      - name: wartosc_en
+        label: 'EN: wartość (puste = jak po polsku, np. liczby i lata)'
         type: string
       - name: opis
         label: Opis pod wartością

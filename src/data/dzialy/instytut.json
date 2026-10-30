@@ -11,18 +11,21 @@
     },
     {
       "wartosc": "Pas startowy",
+      "wartosc_en": "Airstrip",
       "opis": "budynek Instytutu stoi tam, gdzie pod koniec wojny Marczewski jako robotnik przymusowy budował lotnisko",
       "opis_en": "the Institute's building stands where, at the end of the war, Marczewski as a forced labourer built an airstrip"
     },
     {
       "wartosc": "Żywa gęś",
+      "wartosc_en": "Live goose",
       "opis": "nagroda z lwowskiej Księgi Szkockiej, którą kontynuuje nasza Nowa Księga; Per Enflo odebrał ją w 1972 roku",
       "opis_en": "a prize in the Lwów Scottish Book, continued by our New Scottish Book; Per Enflo collected it in 1972"
     },
     {
       "wartosc": "3 rektorów",
+      "wartosc_en": "3 rectors",
       "opis": "matematycy Marczewski, Urbanik i Duda kierowali Uniwersytetem Wrocławskim jako rektorzy",
-      "opis_en": "mathematicians Marczewski, Urbanik and Duda served as rectors of the University of Wrocław"
+      "opis_en": "the mathematicians Marczewski, Urbanik and Duda led the University of Wrocław"
     }
   ],
   "sukcesy_opis": "Nagrody, wyróżnienia, granty i stypendia pracowników, doktorantów, studentów i absolwentów Instytutu.",
