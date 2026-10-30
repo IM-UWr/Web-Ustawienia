@@ -518,7 +518,7 @@ content:
       type: text
   - name: dzial-studia
     label: Strona działu „Studia”
-    description: Teksty na stronie /studia. Kierunki, liczby, ścieżki (z menu „Studia”), aktualności i kontakt budują się same z danych.
+    description: Teksty na stronie /studia. Liczby, kafelki (z menu „Studia”), aktualności i kontakt budują się same z danych.
     type: file
     path: src/data/dzialy/studia.json
     format: json
@@ -529,18 +529,26 @@ content:
     - name: wstep_en
       label: 'EN: wstęp'
       type: text
-    - name: chce_studiowac
-      label: Opis ścieżki „Chcę studiować”
-      type: string
-    - name: chce_studiowac_en
-      label: 'EN: opis ścieżki „Chcę studiować”'
-      type: string
-    - name: juz_studiuje
-      label: Opis ścieżki „Już studiuję”
-      type: string
-    - name: juz_studiuje_en
-      label: 'EN: opis ścieżki „Już studiuję”'
-      type: string
+    - name: o_studiach
+      label: Tekst „O studiach” (2–4 zdania; akapity oddziel pustą linią; puste = sekcja się nie wyświetla)
+      type: text
+    - name: o_studiach_en
+      label: 'EN: tekst „O studiach”'
+      type: text
+    - name: o_studiach_fakty
+      label: Ramka „W skrócie” obok tekstu „O studiach” (komputer; puste = bez ramki; nie powtarzaj liczb z banera)
+      type: object
+      list: true
+      fields:
+      - name: wartosc
+        label: Wartość (krótko, np. A+, PKA)
+        type: string
+      - name: opis
+        label: Opis pod wartością
+        type: string
+      - name: opis_en
+        label: 'EN: opis'
+        type: string
     - name: sekretariat_zakres
       label: 'Kontakt: czym zajmuje się sekretariat dydaktyczny'
       type: string
