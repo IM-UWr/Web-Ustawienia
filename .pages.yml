@@ -449,8 +449,7 @@ content:
       type: string
   - name: dzial-nauka
     label: Strona działu „Nauka”
-    description: Teksty na stronie /nauka. Liczby, kafelki (z menu „Nauka”), obszary badań (z zakładów), seminaria, konferencje, projekty i obrony budują się same
-      z danych.
+    description: Teksty na stronie /nauka. Liczby, kafelki (z menu „Nauka”), projekty i konferencje budują się same z danych.
     type: file
     path: src/data/dzialy/nauka.json
     format: json
@@ -461,12 +460,26 @@ content:
     - name: wstep_en
       label: 'EN: wstęp'
       type: text
-    - name: obszary_opis
-      label: Zdanie nad kartami „Obszary badań” (opcjonalnie)
+    - name: badania_tekst
+      label: Tekst „Badania w Instytucie” (kilka zdań; akapity oddziel pustą linią; puste = sekcja się nie wyświetla)
       type: text
-    - name: obszary_opis_en
-      label: 'EN: zdanie nad obszarami badań'
+    - name: badania_tekst_en
+      label: 'EN: tekst „Badania w Instytucie”'
       type: text
+    - name: badania_fakty
+      label: Ramka „W skrócie” obok tekstu „Badania w Instytucie” (komputer; puste = bez ramki)
+      type: object
+      list: true
+      fields:
+      - name: wartosc
+        label: Wartość (krótko, np. A+, 8, 1947)
+        type: string
+      - name: opis
+        label: Opis pod wartością
+        type: string
+      - name: opis_en
+        label: 'EN: opis'
+        type: string
   - name: dzial-studia
     label: Strona działu „Studia”
     description: Teksty na stronie /studia. Kierunki, liczby, ścieżki (z menu „Studia”), aktualności i kontakt budują się same z danych.
