@@ -480,6 +480,42 @@ content:
       - name: opis_en
         label: 'EN: opis'
         type: string
+    - name: seminaria_tekst
+      label: Strona „Seminaria” (/seminaria) — tekst wprowadzający (akapity oddziel pustą linią; puste = bez tekstu)
+      type: text
+    - name: seminaria_tekst_en
+      label: 'EN: tekst wprowadzający — Seminaria'
+      type: text
+    - name: konferencje_tekst
+      label: Strona „Konferencje” (/nauka/konferencje) — tekst wprowadzający (akapity oddziel pustą linią; puste = bez tekstu)
+      type: text
+    - name: konferencje_tekst_en
+      label: 'EN: tekst wprowadzający — Konferencje'
+      type: text
+    - name: obrony_tekst
+      label: Strona „Obrony doktorskie” (/obrony-doktorskie) — tekst wprowadzający (akapity oddziel pustą linią; puste = bez tekstu)
+      type: text
+    - name: obrony_tekst_en
+      label: 'EN: tekst wprowadzający — Obrony doktorskie'
+      type: text
+    - name: granty_tekst
+      label: Strona „Projekty i granty” (/nauka/granty) — tekst wprowadzający (akapity oddziel pustą linią; puste = bez tekstu)
+      type: text
+    - name: granty_tekst_en
+      label: 'EN: tekst wprowadzający — Projekty i granty'
+      type: text
+    - name: publikacje_tekst
+      label: Strona „Publikacje” (/nauka/publikacje) — tekst wprowadzający (akapity oddziel pustą linią; puste = bez tekstu)
+      type: text
+    - name: publikacje_tekst_en
+      label: 'EN: tekst wprowadzający — Publikacje'
+      type: text
+    - name: sukcesy_tekst
+      label: Strona „Sukcesy” (/nauka/sukcesy) — tekst wprowadzający (akapity oddziel pustą linią; puste = bez tekstu)
+      type: text
+    - name: sukcesy_tekst_en
+      label: 'EN: tekst wprowadzający — Sukcesy'
+      type: text
   - name: dzial-studia
     label: Strona działu „Studia”
     description: Teksty na stronie /studia. Kierunki, liczby, ścieżki (z menu „Studia”), aktualności i kontakt budują się same z danych.
