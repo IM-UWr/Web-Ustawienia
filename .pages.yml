@@ -35,8 +35,14 @@ content:
       - name: opis
         label: Opis zdjęcia (dla niewidomych)
         type: string
+      - name: opis_en
+        label: 'EN: opis zdjęcia'
+        type: string
       - name: podpis
         label: Podpis (np. Fot. Jan Kowalski)
+        type: string
+      - name: podpis_en
+        label: 'EN: podpis (np. Photo: Jan Kowalski)'
         type: string
       - name: kadr
         label: Kadrowanie (np. center 55%)
