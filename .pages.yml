@@ -658,3 +658,50 @@ content:
   - name: tresc_en
     label: 'EN: treść (Markdown)'
     type: text
+- name: o-stronie
+  label: O stronie
+  type: file
+  path: src/content/strony/o-stronie.md
+  format: yaml-frontmatter
+  fields:
+  - name: tytul
+    label: Tytuł
+    type: string
+    required: true
+  - name: opis
+    label: Krótki opis (pod tytułem i w Google)
+    type: text
+  - name: haslo
+    label: Hasło na banerze (telefon)
+    type: string
+  - name: pasek_boczny
+    label: 'Prawy pasek: spis „Na tej stronie”, menu działu czy oba (puste = domyślnie tylko spis)'
+    type: select
+    options:
+      values:
+      - name: oba
+        label: Oba (spis i menu działu)
+      - name: spis
+        label: Tylko spis „Na tej stronie”
+      - name: menu
+        label: Tylko menu działu (podstrony)
+      - name: brak
+        label: Bez prawego paska (strona na całą szerokość)
+  - name: body
+    label: Treść
+    type: rich-text
+    options:
+      format: markdown
+      path: public/pliki/ustawienia
+  - name: tytul_en
+    label: 'EN: tytuł'
+    type: string
+  - name: opis_en
+    label: 'EN: opis'
+    type: text
+  - name: haslo_en
+    label: 'EN: hasło na banerze'
+    type: string
+  - name: tresc_en
+    label: 'EN: treść (Markdown)'
+    type: text
