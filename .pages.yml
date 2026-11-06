@@ -170,12 +170,27 @@ content:
       label: 'Wydarzenia na stronie głównej: ile dni roboczych przed początkiem się pojawiają (sekcja znika, gdy nic nie ma)'
       type: number
       default: 5
+    - name: wydarzenia_dni_telefon
+      label: 'Nadchodzące wydarzenia na telefonie: ile dni naprzód'
+      type: number
     - name: wstep
       label: Tekst pod nazwą Instytutu
       type: text
     - name: wstep_en
       label: 'EN: tekst pod nazwą'
       type: text
+    - name: haslo
+      label: Hasło na banerze (jedna linia; liczby w banerze pokażą się tylko razem z hasłem)
+      type: string
+    - name: haslo_en
+      label: 'EN: hasło na banerze'
+      type: string
+    - name: szukaj_haslo
+      label: 'Hasło na banerze: Szukaj'
+      type: string
+    - name: szukaj_haslo_en
+      label: 'EN: hasło na banerze: Szukaj'
+      type: string
     - name: przyciski
       label: Przyciski pod tekstem
       type: object
@@ -427,6 +442,18 @@ content:
     - name: wstep_en
       label: 'EN: wstęp'
       type: text
+    - name: haslo
+      label: Hasło na banerze (jedna linia; liczby w banerze pokażą się tylko razem z hasłem)
+      type: string
+    - name: haslo_en
+      label: 'EN: hasło na banerze'
+      type: string
+    - name: pracownicy_haslo
+      label: 'Hasło na banerze: Pracownicy'
+      type: string
+    - name: pracownicy_haslo_en
+      label: 'EN: hasło na banerze: Pracownicy'
+      type: string
     - name: o_instytucie
       label: Tekst „O Instytucie” (kilka zdań; akapity oddziel pustą linią; puste = sekcja się nie wyświetla)
       type: text
@@ -456,12 +483,24 @@ content:
     - name: sukcesy_opis_en
       label: 'EN: zdanie nad sukcesami'
       type: text
+    - name: struktura_haslo
+      label: 'Hasło na banerze: Struktura i zakłady'
+      type: string
+    - name: struktura_haslo_en
+      label: 'EN: hasło na banerze: Struktura i zakłady'
+      type: string
     - name: struktura_tekst
       label: Strona „Struktura i zakłady” — tekst nad kartami zakładów (akapity oddziel pustą linią; puste = bez tekstu)
       type: text
     - name: struktura_tekst_en
       label: 'EN: tekst nad kartami zakładów'
       type: text
+    - name: warto_wiedziec_haslo
+      label: 'Hasło na banerze: Warto wiedzieć'
+      type: string
+    - name: warto_wiedziec_haslo_en
+      label: 'EN: hasło na banerze: Warto wiedzieć'
+      type: string
     - name: kontakt_godziny
       label: Godziny pracy sekretariatu (opcjonalnie — puste = nie wyświetla się)
       type: string
@@ -481,6 +520,12 @@ content:
     - name: wstep_en
       label: 'EN: wstęp'
       type: text
+    - name: haslo
+      label: Hasło na banerze (jedna linia; liczby w banerze pokażą się tylko razem z hasłem)
+      type: string
+    - name: haslo_en
+      label: 'EN: hasło na banerze'
+      type: string
     - name: badania_tekst
       label: Tekst „Badania w Instytucie” (kilka zdań; akapity oddziel pustą linią; puste = sekcja się nie wyświetla)
       type: text
@@ -504,30 +549,72 @@ content:
       - name: opis_en
         label: 'EN: opis'
         type: string
+    - name: seminaria_haslo
+      label: 'Hasło na banerze: Seminaria'
+      type: string
+    - name: seminaria_haslo_en
+      label: 'EN: hasło na banerze: Seminaria'
+      type: string
     - name: seminaria_tekst
       label: Strona „Seminaria” (/seminaria) — tekst wprowadzający (akapity oddziel pustą linią; puste = bez tekstu)
       type: text
     - name: seminaria_tekst_en
       label: 'EN: tekst wprowadzający — Seminaria'
       type: text
+    - name: konferencje_haslo
+      label: 'Hasło na banerze: Konferencje'
+      type: string
+    - name: konferencje_haslo_en
+      label: 'EN: hasło na banerze: Konferencje'
+      type: string
     - name: konferencje_tekst
       label: Strona „Konferencje” (/nauka/konferencje) — tekst wprowadzający (akapity oddziel pustą linią; puste = bez tekstu)
       type: text
     - name: konferencje_tekst_en
       label: 'EN: tekst wprowadzający — Konferencje'
       type: text
+    - name: obrony_haslo
+      label: 'Hasło na banerze: Obrony doktorskie'
+      type: string
+    - name: obrony_haslo_en
+      label: 'EN: hasło na banerze: Obrony doktorskie'
+      type: string
+    - name: obrona_haslo
+      label: 'Hasło na banerze: strona pojedynczej obrony'
+      type: string
+    - name: obrona_haslo_en
+      label: 'EN: hasło na banerze: strona pojedynczej obrony'
+      type: string
     - name: obrony_tekst
       label: Strona „Obrony doktorskie” (/obrony-doktorskie) — tekst wprowadzający (akapity oddziel pustą linią; puste = bez tekstu)
       type: text
     - name: obrony_tekst_en
       label: 'EN: tekst wprowadzający — Obrony doktorskie'
       type: text
+    - name: granty_haslo
+      label: 'Hasło na banerze: Projekty i granty'
+      type: string
+    - name: granty_haslo_en
+      label: 'EN: hasło na banerze: Projekty i granty'
+      type: string
     - name: granty_tekst
       label: Strona „Projekty i granty” (/nauka/granty) — tekst wprowadzający (akapity oddziel pustą linią; puste = bez tekstu)
       type: text
     - name: granty_tekst_en
       label: 'EN: tekst wprowadzający — Projekty i granty'
       type: text
+    - name: publikacje_haslo
+      label: 'Hasło na banerze: Publikacje'
+      type: string
+    - name: publikacje_haslo_en
+      label: 'EN: hasło na banerze: Publikacje'
+      type: string
+    - name: rocznik_haslo
+      label: 'Hasło na banerze: strona rocznika publikacji'
+      type: string
+    - name: rocznik_haslo_en
+      label: 'EN: hasło na banerze: strona rocznika publikacji'
+      type: string
     - name: publikacje_tekst
       label: Strona „Publikacje” (/nauka/publikacje) — tekst wprowadzający (akapity oddziel pustą linią; puste = bez tekstu)
       type: text
@@ -540,6 +627,12 @@ content:
     - name: czasopisma_tekst_en
       label: 'EN: tekst nad sekcją „Czasopisma redagowane w Instytucie”'
       type: text
+    - name: sukcesy_haslo
+      label: 'Hasło na banerze: Sukcesy'
+      type: string
+    - name: sukcesy_haslo_en
+      label: 'EN: hasło na banerze: Sukcesy'
+      type: string
     - name: sukcesy_tekst
       label: Strona „Sukcesy” (/nauka/sukcesy) — tekst wprowadzający (akapity oddziel pustą linią; puste = bez tekstu)
       type: text
@@ -559,6 +652,12 @@ content:
     - name: wstep_en
       label: 'EN: wstęp'
       type: text
+    - name: haslo
+      label: Hasło na banerze (jedna linia; liczby w banerze pokażą się tylko razem z hasłem)
+      type: string
+    - name: haslo_en
+      label: 'EN: hasło na banerze'
+      type: string
     - name: o_studiach
       label: Tekst „O studiach” (2–4 zdania; akapity oddziel pustą linią; puste = sekcja się nie wyświetla)
       type: text
@@ -582,6 +681,12 @@ content:
       - name: opis_en
         label: 'EN: opis'
         type: string
+    - name: plan_haslo
+      label: 'Hasło na banerze: Plan zajęć'
+      type: string
+    - name: plan_haslo_en
+      label: 'EN: hasło na banerze: Plan zajęć'
+      type: string
     - name: sekretariat_zakres
       label: 'Kontakt: czym zajmuje się sekretariat dydaktyczny'
       type: string
@@ -601,6 +706,9 @@ content:
   - name: opis
     label: Krótki opis (pod tytułem i w Google)
     type: text
+  - name: haslo
+    label: Hasło na banerze (jedna linia; liczby w banerze pokażą się tylko razem z hasłem)
+    type: string
   - name: pasek_boczny
     label: 'Prawy pasek: spis „Na tej stronie”, menu działu czy oba (puste = domyślnie tylko spis)'
     type: select
@@ -626,6 +734,9 @@ content:
   - name: opis_en
     label: 'EN: opis'
     type: text
+  - name: haslo_en
+    label: 'EN: hasło na banerze'
+    type: string
   - name: tresc_en
     label: 'EN: treść (Markdown)'
     type: text
@@ -642,6 +753,9 @@ content:
   - name: opis
     label: Krótki opis (pod tytułem i w Google)
     type: text
+  - name: haslo
+    label: Hasło na banerze (jedna linia; liczby w banerze pokażą się tylko razem z hasłem)
+    type: string
   - name: pasek_boczny
     label: 'Prawy pasek: spis „Na tej stronie”, menu działu czy oba (puste = domyślnie tylko spis)'
     type: select
@@ -667,6 +781,9 @@ content:
   - name: opis_en
     label: 'EN: opis'
     type: text
+  - name: haslo_en
+    label: 'EN: hasło na banerze'
+    type: string
   - name: tresc_en
     label: 'EN: treść (Markdown)'
     type: text
