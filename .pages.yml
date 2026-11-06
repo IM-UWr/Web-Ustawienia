@@ -354,6 +354,12 @@ content:
         - name: nazwa_en
           label: 'EN: nazwa grupy'
           type: string
+        - name: opis
+          label: Krótki opis na kafelku strony działu (komputer; puste = bez opisu)
+          type: string
+        - name: opis_en
+          label: 'EN: krótki opis'
+          type: string
         - name: kierunki
           label: Na początku grupy wstaw automatycznie kierunki studiów (z sekcji Kierunki)
           type: boolean
@@ -367,6 +373,12 @@ content:
             type: string
           - name: etykieta_en
             label: 'EN: etykieta'
+            type: string
+          - name: opis
+            label: Krótki opis w polu ze stronami na stronie działu (komputer; puste = bez opisu)
+            type: string
+          - name: opis_en
+            label: 'EN: krótki opis'
             type: string
           - name: adres
             label: Adres
