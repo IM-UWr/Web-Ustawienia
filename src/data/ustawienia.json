@@ -7,15 +7,41 @@
     "opis_en": "The campus at plac Grunwaldzki at dusk: the Mathematical Institute building among trees, by the Oder",
     "podpis": "Fot. fotopolska.eu",
     "podpis_en": "Photo: fotopolska.eu",
-    "podpis_telefon": "",
-    "podpis_telefon_en": "",
     "kadr": "center 40%"
   },
-  "logo": "",
+  "tlo_strony": "fale",
+  "sekcje": "linia",
+  "naglowki_podstron": {
+    "wariant": "granat",
+    "zdjecia": {
+      "instytut": {
+        "zdjecie": "/pliki/naglowki/instytut.jpg",
+        "kadr": "center 45%"
+      },
+      "nauka": {
+        "zdjecie": "/pliki/naglowki/nauka.jpg",
+        "kadr": "center 40%"
+      },
+      "studia": {
+        "zdjecie": "/pliki/naglowki/studia.jpg",
+        "kadr": "center 35%"
+      },
+      "aktualnosci": {
+        "zdjecie": "/pliki/naglowki/aktualnosci.jpg",
+        "kadr": "center 40%"
+      },
+      "popularyzacja": {
+        "zdjecie": "/pliki/naglowki/popularyzacja.jpg",
+        "kadr": "center 50%"
+      }
+    }
+  },
+  "wydarzenia_dni_robocze": 5,
+  "wydarzenia_dni_telefon": 30,
+  "wstep": "Badania, seminaria i studia matematyczne na Wydziale Matematyki i Informatyki Uniwersytetu Wrocławskiego. test",
+  "wstep_en": "Research, seminars and mathematics programmes at the Faculty of Mathematics and Computer Science, University of Wrocław.",
   "haslo": "Badania, studia i popularyzacja",
   "haslo_en": "Research, education and outreach",
-  "wstep": "Badania, seminaria i studia matematyczne na Wydziale Matematyki i Informatyki Uniwersytetu Wrocławskiego.",
-  "wstep_en": "Research, seminars and mathematics programmes at the Faculty of Mathematics and Computer Science, University of Wrocław.",
   "szukaj_haslo": "Osoby, referaty i ogłoszenia",
   "szukaj_haslo_en": "People, talks and announcements",
   "przyciski": [
@@ -60,38 +86,5 @@
   },
   "facebook": "https://www.facebook.com/IMUWr",
   "youtube": "https://www.youtube.com/channel/UCO0NMxdgMe2ZISJAbEcKH4w",
-  "archiwum": "https://www.math.uni.wroc.pl/",
-  "partnerzy": [],
-  "powiadomienia": {
-    "adres": ""
-  },
-  "tlo_strony": "fale",
-  "wydarzenia_dni_robocze": 5,
-  "wydarzenia_dni_telefon": 30,
-  "sekcje": "linia",
-  "naglowki_podstron": {
-    "wariant": "granat",
-    "zdjecia": {
-      "instytut": {
-        "zdjecie": "/pliki/naglowki/instytut.jpg",
-        "kadr": "center 45%"
-      },
-      "nauka": {
-        "zdjecie": "/pliki/naglowki/nauka.jpg",
-        "kadr": "center 40%"
-      },
-      "studia": {
-        "zdjecie": "/pliki/naglowki/studia.jpg",
-        "kadr": "center 35%"
-      },
-      "aktualnosci": {
-        "zdjecie": "/pliki/naglowki/aktualnosci.jpg",
-        "kadr": "center 40%"
-      },
-      "popularyzacja": {
-        "zdjecie": "/pliki/naglowki/popularyzacja.jpg",
-        "kadr": "center 50%"
-      }
-    }
-  }
+  "archiwum": "https://www.math.uni.wroc.pl/"
 }
