@@ -29,7 +29,14 @@ content:
           path: public/pliki/baner
       - name: zdjecie_male
         label: Mniejsza wersja na telefony (opcjonalnie, ok. 1200 px)
+        hidden: true
         type: image
+        options:
+          path: public/pliki/baner
+      - name: zdjecie_telefon
+        label: Zdjęcie na telefon (nieużywane)
+        type: image
+        hidden: true
         options:
           path: public/pliki/baner
       - name: opis
@@ -40,12 +47,23 @@ content:
         type: string
       - name: podpis
         label: Podpis (np. Fot. Jan Kowalski)
+        hidden: true
         type: string
       - name: podpis_en
         label: 'EN: podpis (np. Photo: Jan Kowalski)'
+        hidden: true
         type: string
+      - name: podpis_telefon
+        label: Podpis na telefonie (nieużywany)
+        type: string
+        hidden: true
+      - name: podpis_telefon_en
+        label: 'EN: podpis na telefonie (nieużywany)'
+        type: string
+        hidden: true
       - name: kadr
         label: Kadrowanie (np. center 55%)
+        hidden: true
         type: string
     - name: logo
       label: Logo w nagłówku (opcjonalnie)
@@ -54,6 +72,7 @@ content:
         path: public/pliki
     - name: tlo_strony
       label: Tło strony
+      hidden: true
       type: select
       default: zmierzch
       options:
@@ -72,6 +91,7 @@ content:
           label: Brak (białe)
     - name: sekcje
       label: Oddzielanie sekcji
+      hidden: true
       type: select
       default: pasy
       options:
@@ -89,7 +109,7 @@ content:
       type: object
       fields:
       - name: wariant
-        label: Wygląd
+        label: Wygląd (w nowej wersji zmienia tylko cienką linię pod nagłówkiem; zostaw „Granatowy pas”)
         type: select
         default: granat
         options:
@@ -104,6 +124,7 @@ content:
             label: Prosty
       - name: zdjecia
         label: Zdjęcia działów (puste = sam rysunek)
+        hidden: true
         type: object
         fields:
         - name: instytut
@@ -193,6 +214,7 @@ content:
       type: string
     - name: przyciski
       label: Przyciski pod tekstem
+      hidden: true
       type: object
       list: true
       fields:
@@ -265,9 +287,11 @@ content:
         type: string
     - name: facebook
       label: Facebook
+      hidden: true
       type: string
     - name: youtube
       label: YouTube
+      hidden: true
       type: string
     - name: archiwum
       label: Adres archiwum starej strony
@@ -281,6 +305,7 @@ content:
         type: string
     - name: partnerzy
       label: Partnerzy (logotypy w stopce)
+      hidden: true
       type: object
       list: true
       fields:
@@ -398,37 +423,6 @@ content:
           - name: adres
             label: Adres
             type: string
-  - name: stopka
-    label: Stopka
-    type: file
-    path: src/data/stopka.json
-    format: json
-    fields:
-    - name: kolumny
-      label: Kolumny
-      type: object
-      list: true
-      fields:
-      - name: tytul
-        label: Tytuł kolumny
-        type: string
-      - name: tytul_en
-        label: 'EN: tytuł'
-        type: string
-      - name: linki
-        label: Linki
-        type: object
-        list: true
-        fields:
-        - name: etykieta
-          label: Etykieta
-          type: string
-        - name: etykieta_en
-          label: 'EN: etykieta'
-          type: string
-        - name: adres
-          label: Adres
-          type: string
   - name: dzial-instytut
     label: Strona działu „Instytut”
     description: Teksty na stronie /instytut. Liczby, kafelki (z menu „Instytut”) i sukcesy budują się same z danych.
@@ -689,9 +683,11 @@ content:
       type: string
     - name: sekretariat_zakres
       label: 'Kontakt: czym zajmuje się sekretariat dydaktyczny'
+      hidden: true
       type: string
     - name: sekretariat_zakres_en
       label: 'EN: zakres sekretariatu'
+      hidden: true
       type: string
 - name: deklaracja
   label: Deklaracja dostępności
