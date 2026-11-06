@@ -106,10 +106,11 @@ content:
           label: Brak
     - name: naglowki_podstron
       label: Nagłówki podstron
+      hidden: true
       type: object
       fields:
       - name: wariant
-        label: Wygląd (w nowej wersji zmienia tylko cienką linię pod nagłówkiem; zostaw „Granatowy pas”)
+        label: Wygląd
         type: select
         default: granat
         options:
@@ -124,7 +125,6 @@ content:
             label: Prosty
       - name: zdjecia
         label: Zdjęcia działów (puste = sam rysunek)
-        hidden: true
         type: object
         fields:
         - name: instytut
@@ -202,9 +202,11 @@ content:
       type: text
     - name: haslo
       label: Hasło na banerze (jedna linia; liczby w banerze pokażą się tylko razem z hasłem)
+      hidden: true
       type: string
     - name: haslo_en
       label: 'EN: hasło na banerze'
+      hidden: true
       type: string
     - name: szukaj_haslo
       label: 'Hasło na banerze: Szukaj'
