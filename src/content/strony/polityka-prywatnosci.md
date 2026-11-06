@@ -3,6 +3,8 @@ tytul: "Polityka prywatności"
 opis: "Jakie dane zbiera strona Instytutu Matematycznego UWr."
 tytul_en: "Privacy policy"
 opis_en: "What data the Mathematical Institute website collects."
+haslo: "Jakie dane zbieramy i po co"
+haslo_en: "What data we collect and why"
 tresc_en: |
   > **Draft** to be approved by the University of Wrocław.
 

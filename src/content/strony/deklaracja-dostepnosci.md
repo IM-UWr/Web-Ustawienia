@@ -3,6 +3,8 @@ tytul: "Deklaracja dostępności"
 opis: "Deklaracja dostępności strony internetowej Instytutu Matematycznego UWr."
 tytul_en: "Accessibility statement"
 opis_en: "Accessibility statement of the Mathematical Institute website."
+haslo: "Jak dbamy o dostępność"
+haslo_en: "How we keep the site accessible"
 tresc_en: |
   > **Draft.** The full statement will be completed before the site is published at its final address.
 

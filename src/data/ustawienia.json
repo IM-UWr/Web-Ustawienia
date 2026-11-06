@@ -2,15 +2,22 @@
   "baner": {
     "zdjecie": "/pliki/baner/kampus-zmierzch.jpg",
     "zdjecie_male": "/pliki/baner/kampus-zmierzch-1200.jpg",
-    "opis": "Kampus przy placu Grunwaldzkim o zmierzchu: budynki Instytutu, drzewa, Most Grunwaldzki i Odra",
-    "opis_en": "The campus at plac Grunwaldzki at dusk: the Institute buildings, trees, the Grunwaldzki Bridge and the Oder",
+    "zdjecie_telefon": "/pliki/baner/instytut-telefon.jpg",
+    "opis": "Kampus przy placu Grunwaldzkim o zmierzchu: budynek Instytutu Matematycznego wśród drzew, nad Odrą",
+    "opis_en": "The campus at plac Grunwaldzki at dusk: the Mathematical Institute building among trees, by the Oder",
     "podpis": "Fot. fotopolska.eu",
     "podpis_en": "Photo: fotopolska.eu",
+    "podpis_telefon": "",
+    "podpis_telefon_en": "",
     "kadr": "center 40%"
   },
   "logo": "",
+  "haslo": "Badania, studia i popularyzacja",
+  "haslo_en": "Research, education and outreach",
   "wstep": "Badania, seminaria i studia matematyczne na Wydziale Matematyki i Informatyki Uniwersytetu Wrocławskiego.",
   "wstep_en": "Research, seminars and mathematics programmes at the Faculty of Mathematics and Computer Science, University of Wrocław.",
+  "szukaj_haslo": "Osoby, referaty i ogłoszenia",
+  "szukaj_haslo_en": "People, talks and announcements",
   "przyciski": [
     {
       "etykieta": "Dla kandydatów",
@@ -60,6 +67,7 @@
   },
   "tlo_strony": "fale",
   "wydarzenia_dni_robocze": 5,
+  "wydarzenia_dni_telefon": 30,
   "sekcje": "linia",
   "naglowki_podstron": {
     "wariant": "granat",
