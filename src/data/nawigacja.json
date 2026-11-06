@@ -3,17 +3,19 @@
     {
       "etykieta": "Instytut",
       "etykieta_en": "Institute",
+      "adres": "/instytut",
       "grupy": [
         {
           "nazwa": "Ludzie",
           "nazwa_en": "People",
           "opis": "władze i pracownicy",
           "opis_en": "management and staff",
+          "kierunki": false,
           "linki": [
             {
               "etykieta": "Władze",
               "etykieta_en": "Management",
-              "opis": "dyrekcja i Rada Instytutu",
+              "opis": "dyrekcja i Rada Instytutu test",
               "opis_en": "directors and Institute Council",
               "adres": "/instytut/wladze"
             },
@@ -31,6 +33,7 @@
           "nazwa_en": "Organisation",
           "opis": "zakłady i kontakt",
           "opis_en": "departments and contact",
+          "kierunki": false,
           "linki": [
             {
               "etykieta": "Struktura i zakłady",
@@ -53,6 +56,7 @@
           "nazwa_en": "More",
           "opis": "informatyka i biblioteka",
           "opis_en": "IT and library",
+          "kierunki": false,
           "linki": [
             {
               "etykieta": "Infrastruktura informatyczna",
@@ -70,18 +74,19 @@
             }
           ]
         }
-      ],
-      "adres": "/instytut"
+      ]
     },
     {
       "etykieta": "Nauka",
       "etykieta_en": "Research",
+      "adres": "/nauka",
       "grupy": [
         {
           "nazwa": "Wydarzenia naukowe",
           "nazwa_en": "Research events",
           "opis": "seminaria, konferencje, obrony",
           "opis_en": "seminars, conferences, defences",
+          "kierunki": false,
           "linki": [
             {
               "etykieta": "Seminaria",
@@ -111,6 +116,7 @@
           "nazwa_en": "Research",
           "opis": "projekty, publikacje, sukcesy",
           "opis_en": "grants, publications, achievements",
+          "kierunki": false,
           "linki": [
             {
               "etykieta": "Projekty i granty",
@@ -140,6 +146,7 @@
           "nazwa_en": "Degrees",
           "opis": "doktorat i habilitacja",
           "opis_en": "PhD and habilitation",
+          "kierunki": false,
           "linki": [
             {
               "etykieta": "Szkoła doktorska",
@@ -157,18 +164,19 @@
             }
           ]
         }
-      ],
-      "adres": "/nauka"
+      ]
     },
     {
       "etykieta": "Studia",
       "etykieta_en": "Study",
+      "adres": "/studia",
       "grupy": [
         {
           "nazwa": "Kierunki",
           "nazwa_en": "Programmes",
           "opis": "matematyka, SIAD, ISIM, doktorat",
           "opis_en": "mathematics, SIAD, ISIM, PhD",
+          "kierunki": true,
           "linki": [
             {
               "etykieta": "Studia podyplomowe",
@@ -177,14 +185,14 @@
               "opis_en": "teaching qualifications",
               "adres": "/studia/podyplomowe"
             }
-          ],
-          "kierunki": true
+          ]
         },
         {
           "nazwa": "Na co dzień",
           "nazwa_en": "Everyday",
           "opis": "plan, kalendarz, zajęcia, pierwszy rok",
           "opis_en": "timetable, calendar, classes, first year",
+          "kierunki": false,
           "linki": [
             {
               "etykieta": "Plan zajęć",
@@ -221,6 +229,7 @@
           "nazwa_en": "Diploma and student affairs",
           "opis": "egzaminy, dyplom, wnioski, wyjazdy",
           "opis_en": "exams, diploma, requests, exchanges",
+          "kierunki": false,
           "linki": [
             {
               "etykieta": "Egzaminy i dyplom",
@@ -259,8 +268,7 @@
             }
           ]
         }
-      ],
-      "adres": "/studia"
+      ]
     },
     {
       "etykieta": "Aktualności",
@@ -270,12 +278,14 @@
     {
       "etykieta": "Popularyzacja",
       "etykieta_en": "Outreach",
+      "adres": "/popularyzacja",
       "grupy": [
         {
           "nazwa": "Dla kogo",
           "nazwa_en": "Who it’s for",
           "opis": "uczniowie, nauczyciele, wszyscy",
           "opis_en": "pupils, teachers, everyone",
+          "kierunki": false,
           "linki": [
             {
               "etykieta": "Dla uczniów",
@@ -305,6 +315,7 @@
           "nazwa_en": "Partners",
           "opis": "fundacja, portal, PTM",
           "opis_en": "foundation, portal, PTM",
+          "kierunki": false,
           "linki": [
             {
               "etykieta": "Fundacja Matematyków Wrocławskich",
@@ -329,8 +340,7 @@
             }
           ]
         }
-      ],
-      "adres": "/popularyzacja"
+      ]
     },
     {
       "etykieta": "Rekrutacja",
