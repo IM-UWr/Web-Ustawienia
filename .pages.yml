@@ -249,30 +249,46 @@ content:
         label: Link do rekrutacji
         type: string
       - name: kierunki
-        label: Dodatkowe kafelki (np. studia podyplomowe) — kierunki studiów pojawiają się same, z sekcji Kierunki
+        label: Kierunki w menu „Studia” i kafelki na stronie głównej (kolejność = kolejność na liście; kierunek spoza listy pojawi się sam na końcu)
+        description: 'Kierunek z sekcji Kierunki (Web-Studia) wpisujesz adresem /studia/<nazwa pliku>, np. /studia/matematyka; puste pola biorą wtedy pełną nazwę kierunku. Pozycja z innym adresem (np. studia podyplomowe) to zwykły kafelek albo link.'
         type: object
         list: true
         fields:
-        - name: poziom
-          label: Poziom (np. I i II stopień)
+        - name: adres
+          label: Adres (np. /studia/matematyka)
           type: string
-        - name: poziom_en
-          label: 'EN: poziom'
-          type: string
+          required: true
         - name: nazwa
-          label: Nazwa
+          label: Nazwa w menu i na kafelku (puste = pełna nazwa kierunku)
           type: string
+        - name: poziom
+          label: 'Kafelek: napis nad nazwą (np. Kierunek, III stopień; puste przy kierunku = Kierunek)'
+          type: string
+        - name: opis
+          label: 'Kafelek: jedno krótkie zdanie'
+          type: string
+        - name: opis_menu
+          label: Krótki opis w menu „Studia” (puste = przy krótkiej nazwie pełna nazwa, inaczej bez opisu)
+          type: string
+        - name: w_menu
+          label: Pokaż w menu „Studia”
+          type: boolean
+          default: true
+        - name: na_stronie_glownej
+          label: Pokaż kafelek na stronie głównej
+          type: boolean
+          default: true
         - name: nazwa_en
           label: 'EN: nazwa'
           type: string
-        - name: opis
-          label: Opis
+        - name: poziom_en
+          label: 'EN: napis nad nazwą'
           type: string
         - name: opis_en
-          label: 'EN: opis'
+          label: 'EN: zdanie na kafelku'
           type: string
-        - name: adres
-          label: Adres
+        - name: opis_menu_en
+          label: 'EN: krótki opis w menu'
           type: string
     - name: kontakt
       label: Dane kontaktowe (stopka)
