@@ -43,13 +43,54 @@
     "rekrutacja": "https://studia-wmi.uwr.edu.pl/",
     "kierunki": [
       {
+        "adres": "/studia/matematyka",
+        "nazwa": "Matematyka",
+        "nazwa_en": "Mathematics",
+        "poziom": "I i II stopień",
+        "poziom_en": "BSc and MSc",
+        "opis": "Nowy program studiów od roku 2026/27.",
+        "opis_en": "New curriculum from 2026/27.",
+        "opis_menu": "I i II stopień, pięć specjalności",
+        "opis_menu_en": "BSc and MSc, five specialisations"
+      },
+      {
+        "adres": "/studia/siad",
+        "nazwa": "Sztuczna inteligencja w analizie danych",
+        "nazwa_en": "AI in Data Science",
+        "poziom": "Kierunek",
+        "poziom_en": "Programme",
+        "opis": "Studia I stopnia od 2025/26.",
+        "opis_en": "Bachelor's programme since 2025/26."
+      },
+      {
+        "adres": "/studia/isim",
+        "nazwa": "ISIM",
+        "nazwa_en": "ISIM",
+        "poziom": "Kierunek",
+        "poziom_en": "Programme",
+        "opis": "Studia I stopnia wspólnie z Instytutem Informatyki.",
+        "opis_en": "Bachelor's programme run jointly with the Institute of Computer Science."
+      },
+      {
+        "adres": "/studia/szkola-doktorska",
+        "nazwa": "Szkoła doktorska",
+        "nazwa_en": "Doctoral school",
+        "poziom": "III stopień",
+        "poziom_en": "PhD",
+        "opis": "Kolegium Doktorskie Matematyki.",
+        "opis_en": "Doctoral College of Mathematics.",
+        "opis_menu": "Kolegium Doktorskie Matematyki",
+        "opis_menu_en": "Doctoral College of Mathematics"
+      },
+      {
         "poziom": "Podyplomowe",
         "poziom_en": "Postgraduate",
         "nazwa": "Nauczanie matematyki",
         "nazwa_en": "Teaching mathematics",
         "opis": "Studia kwalifikacyjne, 3 semestry.",
         "opis_en": "Qualification programme, 3 semesters.",
-        "adres": "/studia/podyplomowe"
+        "adres": "/studia/podyplomowe",
+        "w_menu": false
       }
     ]
   },
