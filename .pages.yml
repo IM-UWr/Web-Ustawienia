@@ -218,7 +218,10 @@ content:
       label: Przyciski pod tekstem
       hidden: true
       type: object
-      list: true
+      list:
+        collapsible:
+          collapsed: true
+          summary: "{etykieta}"
       fields:
       - name: etykieta
         label: Etykieta
@@ -252,7 +255,10 @@ content:
         label: Kierunki w menu „Studia” i kafelki na stronie głównej (kolejność = kolejność na liście; kierunek spoza listy pojawi się sam na końcu)
         description: Kierunek z sekcji Kierunki (Web-Studia) wpisujesz adresem /studia/<nazwa pliku>, np. /studia/matematyka; puste pola biorą wtedy pełną nazwę kierunku. Pozycja z innym adresem (np. studia podyplomowe) to zwykły kafelek albo link.
         type: object
-        list: true
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{nazwa}"
         fields:
         - name: adres
           label: Adres (np. /studia/matematyka)
@@ -325,7 +331,10 @@ content:
       label: Partnerzy (logotypy w stopce)
       hidden: true
       type: object
-      list: true
+      list:
+        collapsible:
+          collapsed: true
+          summary: "{nazwa}"
       fields:
       - name: nazwa
         label: Nazwa
@@ -347,7 +356,10 @@ content:
     - name: kafelki
       label: Kafelki
       type: object
-      list: true
+      list:
+        collapsible:
+          collapsed: true
+          summary: "{etykieta}"
       fields:
       - name: etykieta
         label: Etykieta
@@ -390,7 +402,10 @@ content:
     - name: menu
       label: Pozycje menu
       type: object
-      list: true
+      list:
+        collapsible:
+          collapsed: true
+          summary: "{etykieta}"
       fields:
       - name: etykieta
         label: Etykieta
@@ -404,7 +419,10 @@ content:
       - name: grupy
         label: Grupy w rozwijanym menu
         type: object
-        list: true
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{nazwa}"
         fields:
         - name: nazwa
           label: Nazwa grupy
@@ -424,7 +442,10 @@ content:
         - name: linki
           label: Linki
           type: object
-          list: true
+          list:
+            collapsible:
+              collapsed: true
+              summary: "{etykieta}"
           fields:
           - name: etykieta
             label: Etykieta
