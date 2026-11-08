@@ -1,4 +1,5 @@
 ---
+status_publikacji: oficjalna
 tytul: "O stronie"
 opis: "Patroni działów, źródła ilustracji, zgłaszanie błędów i jak zrobiona jest ta strona."
 tytul_en: "About this site"

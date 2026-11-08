@@ -1,138 +1,27 @@
 {
   "baner": {
     "zdjecie": "/pliki/baner/kampus-zmierzch.jpg",
-    "zdjecie_male": "/pliki/baner/kampus-zmierzch-1200.jpg",
-    "zdjecie_telefon": "/pliki/baner/instytut-telefon.jpg",
     "opis": "Kampus przy placu Grunwaldzkim o zmierzchu: budynek Instytutu Matematycznego wśród drzew, nad Odrą",
-    "opis_en": "The campus at plac Grunwaldzki at dusk: the Mathematical Institute building among trees, by the Oder",
-    "podpis": "Fot. fotopolska.eu",
-    "podpis_en": "Photo: fotopolska.eu",
-    "podpis_telefon": "",
-    "podpis_telefon_en": "",
-    "kadr": "center 40%"
+    "opis_en": "The campus at plac Grunwaldzki at dusk: the Mathematical Institute building among trees, by the Oder"
   },
   "logo": "",
-  "haslo": "Badania, studia i popularyzacja",
-  "haslo_en": "Research, education and outreach",
   "wstep": "Badania, seminaria i studia matematyczne na Wydziale Matematyki i Informatyki Uniwersytetu Wrocławskiego.",
   "wstep_en": "Research, seminars and mathematics programmes at the Faculty of Mathematics and Computer Science, University of Wrocław.",
   "szukaj_haslo": "Osoby, referaty i ogłoszenia",
   "szukaj_haslo_en": "People, talks and announcements",
-  "przyciski": [
-    {
-      "etykieta": "Dla kandydatów",
-      "etykieta_en": "Prospective students",
-      "adres": "https://studia-wmi.uwr.edu.pl/"
-    },
-    {
-      "etykieta": "Dla studentów",
-      "etykieta_en": "Students",
-      "adres": "/studia"
-    },
-    {
-      "etykieta": "Dla naukowców",
-      "etykieta_en": "Researchers",
-      "adres": "/nauka"
-    }
-  ],
   "studia": {
-    "tytul": "Studiuj matematykę we Wrocławiu",
-    "tytul_en": "Study mathematics in Wrocław",
     "opis": "Studia I, II i III stopnia oraz studia podyplomowe.",
-    "opis_en": "Bachelor's, master's and doctoral studies, plus postgraduate programmes.",
-    "rekrutacja": "https://studia-wmi.uwr.edu.pl/",
-    "kierunki": [
-      {
-        "adres": "/studia/matematyka",
-        "nazwa": "Matematyka",
-        "nazwa_en": "Mathematics",
-        "poziom": "I i II stopień",
-        "poziom_en": "BSc and MSc",
-        "opis": "Nowy program studiów od roku 2026/27.",
-        "opis_en": "New curriculum from 2026/27.",
-        "opis_menu": "I i II stopień, pięć specjalności",
-        "opis_menu_en": "BSc and MSc, five specialisations"
-      },
-      {
-        "adres": "/studia/siad",
-        "nazwa": "Sztuczna inteligencja w analizie danych",
-        "nazwa_en": "AI in Data Science",
-        "poziom": "Kierunek",
-        "poziom_en": "Programme",
-        "opis": "Studia I stopnia od 2025/26.",
-        "opis_en": "Bachelor's programme since 2025/26."
-      },
-      {
-        "adres": "/studia/isim",
-        "nazwa": "ISIM",
-        "nazwa_en": "ISIM",
-        "poziom": "Kierunek",
-        "poziom_en": "Programme",
-        "opis": "Studia I stopnia wspólnie z Instytutem Informatyki.",
-        "opis_en": "Bachelor's programme run jointly with the Institute of Computer Science."
-      },
-      {
-        "adres": "/studia/szkola-doktorska",
-        "nazwa": "Szkoła doktorska",
-        "nazwa_en": "Doctoral school",
-        "poziom": "III stopień",
-        "poziom_en": "PhD",
-        "opis": "Kolegium Doktorskie Matematyki.",
-        "opis_en": "Doctoral College of Mathematics.",
-        "opis_menu": "Kolegium Doktorskie Matematyki",
-        "opis_menu_en": "Doctoral College of Mathematics"
-      },
-      {
-        "poziom": "Podyplomowe",
-        "poziom_en": "Postgraduate",
-        "nazwa": "Nauczanie matematyki",
-        "nazwa_en": "Teaching mathematics",
-        "opis": "Studia kwalifikacyjne, 3 semestry.",
-        "opis_en": "Qualification programme, 3 semesters.",
-        "adres": "/studia/podyplomowe",
-        "w_menu": false
-      }
-    ]
+    "opis_en": "Bachelor's, master's and doctoral studies, plus postgraduate programmes."
   },
   "kontakt": {
     "adres": "pl. Grunwaldzki 2, 50-384 Wrocław",
     "telefon": "+48 71 375 74 01",
     "email": "dyrekcja@math.uni.wroc.pl"
   },
-  "facebook": "https://www.facebook.com/IMUWr",
-  "youtube": "https://www.youtube.com/channel/UCO0NMxdgMe2ZISJAbEcKH4w",
   "archiwum": "https://www.math.uni.wroc.pl/",
-  "partnerzy": [],
   "powiadomienia": {
     "adres": ""
   },
-  "tlo_strony": "fale",
   "wydarzenia_dni_robocze": 5,
-  "wydarzenia_dni_telefon": 30,
-  "sekcje": "linia",
-  "naglowki_podstron": {
-    "wariant": "granat",
-    "zdjecia": {
-      "instytut": {
-        "zdjecie": "/pliki/naglowki/instytut.jpg",
-        "kadr": "center 45%"
-      },
-      "nauka": {
-        "zdjecie": "/pliki/naglowki/nauka.jpg",
-        "kadr": "center 40%"
-      },
-      "studia": {
-        "zdjecie": "/pliki/naglowki/studia.jpg",
-        "kadr": "center 35%"
-      },
-      "aktualnosci": {
-        "zdjecie": "/pliki/naglowki/aktualnosci.jpg",
-        "kadr": "center 40%"
-      },
-      "popularyzacja": {
-        "zdjecie": "/pliki/naglowki/popularyzacja.jpg",
-        "kadr": "center 50%"
-      }
-    }
-  }
+  "wydarzenia_dni_telefon": 30
 }
