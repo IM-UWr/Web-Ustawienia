@@ -474,10 +474,9 @@ content:
     required: true
   - name: body
     label: Treść
-    type: rich-text
+    type: code
     options:
       format: markdown
-      path: public/pliki/ustawienia
     description: |-
       Piszesz jak w zwykłym edytorze; akapity oddziela Enter. Nagłówek 2 = nowa sekcja (pojawi się w spisie „Na tej stronie”).
 
@@ -506,10 +505,9 @@ content:
   - name: tresc_en
     label: Treść EN
     description: Cała strona po angielsku, w tym samym układzie co Treść (nagłówki sekcji po angielsku). Puste = strona angielska pokaże treść polską.
-    type: rich-text
+    type: code
     options:
       format: markdown
-      path: public/pliki/ustawienia
   - name: opis
     label: Krótki opis (pod tytułem i w Google)
     type: text
@@ -552,10 +550,9 @@ content:
     required: true
   - name: body
     label: Treść
-    type: rich-text
+    type: code
     options:
       format: markdown
-      path: public/pliki/ustawienia
     description: |-
       Piszesz jak w zwykłym edytorze; akapity oddziela Enter. Nagłówek 2 = nowa sekcja (pojawi się w spisie „Na tej stronie”).
 
@@ -584,10 +581,9 @@ content:
   - name: tresc_en
     label: Treść EN
     description: Cała strona po angielsku, w tym samym układzie co Treść (nagłówki sekcji po angielsku). Puste = strona angielska pokaże treść polską.
-    type: rich-text
+    type: code
     options:
       format: markdown
-      path: public/pliki/ustawienia
   - name: opis
     label: Krótki opis (pod tytułem i w Google)
     type: text
@@ -630,10 +626,9 @@ content:
     required: true
   - name: body
     label: Treść
-    type: rich-text
+    type: code
     options:
       format: markdown
-      path: public/pliki/ustawienia
     description: |-
       Piszesz jak w zwykłym edytorze; akapity oddziela Enter. Nagłówek 2 = nowa sekcja (pojawi się w spisie „Na tej stronie”).
 
@@ -662,10 +657,9 @@ content:
   - name: tresc_en
     label: Treść EN
     description: Cała strona po angielsku, w tym samym układzie co Treść (nagłówki sekcji po angielsku). Puste = strona angielska pokaże treść polską.
-    type: rich-text
+    type: code
     options:
       format: markdown
-      path: public/pliki/ustawienia
   - name: opis
     label: Krótki opis (pod tytułem i w Google)
     type: text
