@@ -1,5 +1,4 @@
-# Pages CMS — Web-Ustawienia: Ustawienia całej strony: menu, stopka, skróty, baner, nagłówki działów, tło i sekcje, deklaracja dostępności, polityka prywatności.
-# Wygenerowane przy migracji z Avean/IM-Website-test; pola „Opublikowany” usunięte (bez wersji roboczych).
+# Pages CMS — formularze aktualnej strony Instytutu Matematycznego UWr.
 media:
   input: public/pliki
   output: /pliki
@@ -27,275 +26,61 @@ content:
         type: image
         options:
           path: public/pliki/baner
-      - name: zdjecie_male
-        label: Mniejsza wersja na telefony (opcjonalnie, ok. 1200 px)
-        hidden: true
-        type: image
-        options:
-          path: public/pliki/baner
-      - name: zdjecie_telefon
-        label: Zdjęcie na telefon (nieużywane)
-        type: image
-        hidden: true
-        options:
-          path: public/pliki/baner
+        description: Zdjęcie wpisu lub strony, używane także w powiązanych zapowiedziach.
       - name: opis
         label: Opis zdjęcia (dla niewidomych)
         type: string
+        description: Krótki opis używany na stronie lub w jej zapowiedzi.
       - name: opis_en
         label: 'EN: opis zdjęcia'
         type: string
-      - name: podpis
-        label: Podpis (np. Fot. Jan Kowalski)
-        hidden: true
-        type: string
-      - name: podpis_en
-        label: 'EN: podpis (np. Photo: Jan Kowalski)'
-        hidden: true
-        type: string
-      - name: podpis_telefon
-        label: Podpis na telefonie (nieużywany)
-        type: string
-        hidden: true
-      - name: podpis_telefon_en
-        label: 'EN: podpis na telefonie (nieużywany)'
-        type: string
-        hidden: true
-      - name: kadr
-        label: Kadrowanie (np. center 55%)
-        hidden: true
-        type: string
+        description: Angielska wersja pola Opis zdjęcia (dla niewidomych); puste oznacza użycie wersji polskiej.
+      description: Zdjęcie okładki strony głównej, wspólne dla komputera i telefonu.
     - name: logo
       label: Logo w nagłówku (opcjonalnie)
       type: image
       options:
         path: public/pliki
-    - name: tlo_strony
-      label: Tło strony
-      hidden: true
-      type: select
-      default: zmierzch
-      options:
-        values:
-        - name: zmierzch
-          label: Zmierzch
-        - name: pole
-          label: Pole kierunków
-        - name: kratka
-          label: Kratka / tablica
-        - name: penrose
-          label: Kafelkowanie Penrose'a
-        - name: fale
-          label: Fale (izolinie)
-        - name: brak
-          label: Brak (białe)
-    - name: sekcje
-      label: Oddzielanie sekcji
-      hidden: true
-      type: select
-      default: pasy
-      options:
-        values:
-        - name: pasy
-          label: Pasy
-        - name: linia
-          label: Linia
-        - name: karty
-          label: Karty
-        - name: brak
-          label: Brak
-    - name: naglowki_podstron
-      label: Nagłówki podstron
-      hidden: true
-      type: object
-      fields:
-      - name: wariant
-        label: Wygląd
-        type: select
-        default: granat
-        options:
-          values:
-          - name: granat
-            label: Granatowy pas
-          - name: zdjecie
-            label: Zdjęcie w ramce
-          - name: motyw
-            label: Sam rysunek
-          - name: prosty
-            label: Prosty
-      - name: zdjecia
-        label: Zdjęcia działów (puste = sam rysunek)
-        type: object
-        fields:
-        - name: instytut
-          label: Instytut
-          type: object
-          fields:
-          - name: zdjecie
-            label: Zdjęcie
-            type: image
-            options:
-              path: public/pliki/naglowki
-          - name: kadr
-            label: Kadr (np. center 40%)
-            type: string
-        - name: nauka
-          label: Nauka
-          type: object
-          fields:
-          - name: zdjecie
-            label: Zdjęcie
-            type: image
-            options:
-              path: public/pliki/naglowki
-          - name: kadr
-            label: Kadr (np. center 40%)
-            type: string
-        - name: studia
-          label: Studia
-          type: object
-          fields:
-          - name: zdjecie
-            label: Zdjęcie
-            type: image
-            options:
-              path: public/pliki/naglowki
-          - name: kadr
-            label: Kadr (np. center 40%)
-            type: string
-        - name: aktualnosci
-          label: Aktualności
-          type: object
-          fields:
-          - name: zdjecie
-            label: Zdjęcie
-            type: image
-            options:
-              path: public/pliki/naglowki
-          - name: kadr
-            label: Kadr (np. center 40%)
-            type: string
-        - name: popularyzacja
-          label: Popularyzacja
-          type: object
-          fields:
-          - name: zdjecie
-            label: Zdjęcie
-            type: image
-            options:
-              path: public/pliki/naglowki
-          - name: kadr
-            label: Kadr (np. center 40%)
-            type: string
+      description: Opcjonalne logo w nagłówku telefonu; na komputerze pozostaje znak UWr.
     - name: wydarzenia_dni_robocze
-      label: 'Wydarzenia na stronie głównej: ile dni roboczych przed początkiem się pojawiają (sekcja znika, gdy nic nie ma)'
+      label: 'Wydarzenia na stronie głównej: ile dni roboczych przed początkiem się pojawiają (sekcja znika, gdy
+        nic nie ma)'
       type: number
       default: 5
+      description: Ile dni roboczych naprzód obejmuje zestawienie najbliższych wydarzeń na stronie aktualności.
     - name: wydarzenia_dni_telefon
       label: 'Nadchodzące wydarzenia na telefonie: ile dni naprzód'
       type: number
+      description: Ile dni kalendarzowych naprzód obejmuje Szybki dostęp, na komputerze i telefonie.
     - name: wstep
-      label: Tekst pod nazwą Instytutu
+      label: Opis do wyszukiwarek
       type: text
+      description: Opis strony do wyszukiwarek i udostępniania linków; nagłówek nowej strony nie pokazuje tego akapitu.
     - name: wstep_en
-      label: 'EN: tekst pod nazwą'
+      label: Opis do wyszukiwarek EN
       type: text
-    - name: haslo
-      label: Hasło na banerze (jedna linia; liczby w banerze pokażą się tylko razem z hasłem)
-      hidden: true
-      type: string
-    - name: haslo_en
-      label: 'EN: hasło na banerze'
-      hidden: true
-      type: string
+      description: Angielska wersja pola Opis do wyszukiwarek; puste oznacza użycie wersji polskiej.
     - name: szukaj_haslo
       label: 'Hasło na banerze: Szukaj'
       type: string
+      description: Hasło w nagłówku strony Szukaj.
     - name: szukaj_haslo_en
       label: 'EN: hasło na banerze: Szukaj'
       type: string
-    - name: przyciski
-      label: Przyciski pod tekstem
-      hidden: true
-      type: object
-      list:
-        collapsible:
-          collapsed: true
-          summary: "{etykieta}"
-      fields:
-      - name: etykieta
-        label: Etykieta
-        type: string
-      - name: etykieta_en
-        label: 'EN: etykieta'
-        type: string
-      - name: adres
-        label: Adres
-        type: string
+      description: Angielskie hasło; puste pole nie zastępuje go polskim hasłem.
     - name: studia
       label: Sekcja „Studiuj matematykę”
       type: object
       fields:
-      - name: tytul
-        label: Tytuł
-        type: string
-      - name: tytul_en
-        label: 'EN: tytuł'
-        type: string
       - name: opis
         label: Opis
         type: string
+        description: Opis sekcji studiów na stronie głównej; jest wyświetlany pod jej tytułem.
       - name: opis_en
         label: 'EN: opis'
         type: string
-      - name: rekrutacja
-        label: Link do rekrutacji
-        type: string
-      - name: kierunki
-        label: Kierunki w menu „Studia” i kafelki na stronie głównej (kolejność = kolejność na liście; kierunek spoza listy pojawi się sam na końcu)
-        description: Kierunek z sekcji Kierunki (Web-Studia) wpisujesz adresem /studia/<nazwa pliku>, np. /studia/matematyka; puste pola biorą wtedy pełną nazwę kierunku. Pozycja z innym adresem (np. studia podyplomowe) to zwykły kafelek albo link.
-        type: object
-        list:
-          collapsible:
-            collapsed: true
-            summary: "{nazwa}"
-        fields:
-        - name: adres
-          label: Adres (np. /studia/matematyka)
-          type: string
-          required: true
-        - name: nazwa
-          label: Nazwa w menu i na kafelku (puste = pełna nazwa kierunku)
-          type: string
-        - name: poziom
-          label: 'Kafelek: napis nad nazwą (np. Kierunek, III stopień; puste przy kierunku = Kierunek)'
-          type: string
-        - name: opis
-          label: 'Kafelek: jedno krótkie zdanie'
-          type: string
-        - name: opis_menu
-          label: Krótki opis w menu „Studia” (puste = przy krótkiej nazwie pełna nazwa, inaczej bez opisu)
-          type: string
-        - name: w_menu
-          label: Pokaż w menu „Studia”
-          type: boolean
-          default: true
-        - name: na_stronie_glownej
-          label: Pokaż kafelek na stronie głównej
-          type: boolean
-          default: true
-        - name: nazwa_en
-          label: 'EN: nazwa'
-          type: string
-        - name: poziom_en
-          label: 'EN: napis nad nazwą'
-          type: string
-        - name: opis_en
-          label: 'EN: zdanie na kafelku'
-          type: string
-        - name: opis_menu_en
-          label: 'EN: krótki opis w menu'
-          type: string
+        description: Angielska wersja pola Opis; puste oznacza użycie wersji polskiej.
+      description: Opis sekcji studiów na stronie głównej. Kafelki i adres rekrutacji pochodzą z Menu głównego.
     - name: kontakt
       label: Dane kontaktowe (stopka)
       type: object
@@ -303,23 +88,20 @@ content:
       - name: adres
         label: Adres
         type: string
+        description: Adres naszej strony zaczyna się od /; zewnętrzny od https://.
       - name: telefon
         label: Telefon
         type: string
+        description: Numer telefonu do kontaktu; przy osobach spoza administracji obowiązują zasady spisu pracowników.
       - name: email
         label: E-mail
         type: string
-    - name: facebook
-      label: Facebook
-      hidden: true
-      type: string
-    - name: youtube
-      label: YouTube
-      hidden: true
-      type: string
+        description: Adres e-mail do kontaktu.
+      description: E-mail wyświetlany przy koordynatorach seminarium.
     - name: archiwum
       label: Adres archiwum starej strony
       type: string
+      description: Adres archiwalnych materiałów, dostępny jako link na stronie.
     - name: powiadomienia
       label: Powiadomienia e-mail o referatach
       type: object
@@ -327,26 +109,10 @@ content:
       - name: adres
         label: Adres automatu listy mailingowej (Google Apps Script, …/exec; puste = zapisy wyłączone)
         type: string
-    - name: partnerzy
-      label: Partnerzy (logotypy w stopce)
-      hidden: true
-      type: object
-      list:
-        collapsible:
-          collapsed: true
-          summary: "{nazwa}"
-      fields:
-      - name: nazwa
-        label: Nazwa
-        type: string
-      - name: logo
-        label: Logo
-        type: image
-        options:
-          path: public/pliki/partnerzy
-      - name: adres
-        label: Strona partnera
-        type: string
+        description: Adres automatu zapisów kończący się na /exec. Puste pole wyłącza zapisy na referaty.
+      description: Ustawienia formularza zapisu na powiadomienia o referatach.
+    description: Zdjęcie okładki, opisy do wyszukiwarek, kontakt i ustawienia wydarzeń. Menu oraz kafelki kierunków
+      edytuj razem w Menu główne.
   - name: skroty
     label: Kafelki „Na skróty”
     type: file
@@ -359,40 +125,23 @@ content:
       list:
         collapsible:
           collapsed: true
-          summary: "{etykieta}"
+          summary: '{etykieta}'
       fields:
       - name: etykieta
         label: Etykieta
         type: string
+        description: Napis wyświetlany przy tej pozycji.
       - name: etykieta_en
         label: 'EN: etykieta'
         type: string
+        description: Angielska wersja pola Etykieta; puste oznacza użycie wersji polskiej.
       - name: adres
         label: Adres (np. /pracownicy albo https://…)
         type: string
-      - name: ikona
-        label: Ikona
-        type: select
-        options:
-          values:
-          - name: kalendarz
-            label: Kalendarz
-          - name: zegar
-            label: Zegar
-          - name: ludzie
-            label: Ludzie
-          - name: tablica
-            label: Tablica
-          - name: flaga
-            label: Flaga
-          - name: zewnetrzny
-            label: Link zewnętrzny
-          - name: czapka
-            label: Czapka absolwenta
-          - name: plik
-            label: Dokument
-          - name: mail
-            label: Koperta
+        description: Adres naszej strony zaczyna się od /; zewnętrzny od https://.
+      description: Linki Szybkiego dostępu, w kolejności wyświetlania; strona pokazuje cztery pierwsze.
+    description: Cztery pierwsze pozycje tworzą Szybki dostęp. Opis planu, kalendarza i spisu pracowników jest uzupełniany
+      automatycznie.
   - name: nawigacja
     label: Menu główne
     type: file
@@ -405,63 +154,138 @@ content:
       list:
         collapsible:
           collapsed: true
-          summary: "{etykieta}"
+          summary: '{etykieta}'
       fields:
       - name: etykieta
         label: Etykieta
         type: string
+        description: Napis wyświetlany przy tej pozycji.
       - name: etykieta_en
         label: 'EN: etykieta'
         type: string
+        description: Angielska wersja pola Etykieta; puste oznacza użycie wersji polskiej.
+      - name: w_menu
+        label: Pokaż w menu
+        type: boolean
+        default: true
+        description: Włącza pozycję w menu. Wyłączenie nie usuwa jej strony ani nie wpływa na statystyki.
+      - name: w_pasku
+        label: Pokaż także w górnym pasku na komputerze
+        type: boolean
+        default: true
+        description: Wyłącz, aby pozycja była dostępna tylko w panelu menu, np. Rekrutacja.
+      - name: rekrutacja
+        label: Użyj tego adresu w przyciskach rekrutacji
+        type: boolean
+        default: false
+        description: Wybierz przy jednej pozycji. Jej adres zasila również przyciski rekrutacji na stronach studiów.
       - name: adres
         label: Adres (klik w napis; przy pozycji z rozwijaną listą — strona działu, np. /instytut)
         type: string
+        required: true
+        description: Adres naszej strony zaczyna się od /; zewnętrzny od https://.
       - name: grupy
         label: Grupy w rozwijanym menu
         type: object
         list:
           collapsible:
             collapsed: true
-            summary: "{nazwa}"
+            summary: '{nazwa}'
         fields:
         - name: nazwa
           label: Nazwa grupy
           type: string
+          description: Nazwa wyświetlana na stronie i powiązanych listach.
         - name: nazwa_en
           label: 'EN: nazwa grupy'
           type: string
+          description: Angielska wersja pola Nazwa grupy; puste oznacza użycie wersji polskiej.
+        - name: w_menu
+          label: Pokaż w menu
+          type: boolean
+          default: true
+          description: Włącza pozycję w menu. Wyłączenie nie usuwa jej strony ani nie wpływa na statystyki.
         - name: opis
           label: Krótki opis na kafelku strony działu (komputer; puste = bez opisu)
           type: string
+          description: Krótki opis używany na stronie lub w jej zapowiedzi.
         - name: opis_en
           label: 'EN: krótki opis'
           type: string
-        - name: kierunki
-          label: Na początku grupy wstaw automatycznie kierunki studiów (z sekcji Kierunki)
-          type: boolean
+          description: Angielska wersja pola Krótki opis na kafelku strony działu (komputer; puste = bez opisu);
+            puste oznacza użycie wersji polskiej.
         - name: linki
           label: Linki
           type: object
           list:
             collapsible:
               collapsed: true
-              summary: "{etykieta}"
+              summary: '{etykieta}'
           fields:
           - name: etykieta
             label: Etykieta
             type: string
+            description: Napis wyświetlany przy tej pozycji.
           - name: etykieta_en
             label: 'EN: etykieta'
             type: string
+            description: Angielska wersja pola Etykieta; puste oznacza użycie wersji polskiej.
+          - name: w_menu
+            label: Pokaż w menu
+            type: boolean
+            default: true
+            description: Włącza pozycję w menu. Wyłączenie nie usuwa jej strony ani nie wpływa na statystyki.
           - name: opis
             label: Krótki opis w polu ze stronami na stronie działu (komputer; puste = bez opisu)
             type: string
+            description: Krótki opis używany na stronie lub w jej zapowiedzi.
           - name: opis_en
             label: 'EN: krótki opis'
             type: string
+            description: Angielska wersja pola Krótki opis w polu ze stronami na stronie działu (komputer; puste
+              = bez opisu); puste oznacza użycie wersji polskiej.
           - name: adres
             label: Adres
             type: string
+            description: Adres naszej strony zaczyna się od /; zewnętrzny od https://.
+          - name: na_stronie_glownej
+            label: Pokaż kafelek na stronie głównej
+            type: boolean
+            default: false
+            description: Włącza kafelek w sekcji studiów na stronie głównej, niezależnie od widoczności w menu.
+          - name: kafelek_nazwa
+            label: Nazwa kafelka
+            type: string
+            description: Nazwa kafelka na stronie głównej; puste oznacza nazwę z menu.
+          - name: kafelek_nazwa_en
+            label: Nazwa kafelka EN
+            type: string
+            description: Angielska wersja pola Nazwa kafelka; puste oznacza użycie wersji polskiej.
+          - name: kafelek_poziom
+            label: Napis nad nazwą kafelka
+            type: string
+            description: Krótki napis nad nazwą kafelka, np. I i II stopień.
+          - name: kafelek_poziom_en
+            label: Napis nad nazwą kafelka EN
+            type: string
+            description: Angielska wersja pola Napis nad nazwą kafelka; puste oznacza użycie wersji polskiej.
+          - name: kafelek_opis
+            label: Opis kafelka
+            type: string
+            description: Opis kafelka na stronie głównej; puste oznacza opis pozycji menu.
+          - name: kafelek_opis_en
+            label: Opis kafelka EN
+            type: string
+            description: Angielska wersja pola Opis kafelka; puste oznacza użycie wersji polskiej.
+          description: Ręcznie dodawane linki. Kafelek na stronie głównej można włączyć niezależnie od widoczności
+            w menu.
+        description: Podgrupy tej pozycji menu, w kolejności wyświetlania. Nazwa i opis pojawiają się też na stronie
+          działu.
+      description: Pozycje główne. Kolejność listy obowiązuje na komputerze i telefonie. Pokaż w menu dotyczy również
+        grup i linków.
+    description: Całe menu oraz powiązane kafelki. Kolejność list jest kolejnością na stronie. Żadna pozycja nie
+      jest dopisywana automatycznie. Link może być ukryty w menu i nadal mieć kafelek.
+  description: Powiązane formularze ustawień strony.
 - name: deklaracja
   label: Deklaracja dostępności
   type: file
@@ -472,40 +296,35 @@ content:
     label: Tytuł
     type: string
     required: true
+    description: Nazwa strony lub wpisu, widoczna także na odpowiednich listach i w wynikach wyszukiwania.
+  - name: status_publikacji
+    label: Status publikacji
+    type: select
+    required: true
+    default: oficjalna
+    description: Zapisuje wybór do przyszłej publikacji. Obecnie nie zmienia widoczności. Podgląd jest publiczny.
+    options:
+      values:
+      - name: oficjalna
+        label: Opublikowana — strona oficjalna i podgląd
+      - name: podglad
+        label: Tylko podgląd
   - name: body
     label: Treść
     type: rich-text
     options:
       format: markdown
       path: public/pliki/ustawienia
-    description: |-
-      Piszesz jak w zwykłym edytorze; akapity oddziela Enter. Nagłówek 2 = nowa sekcja (pojawi się w spisie „Na tej stronie”).
-
-      Gdy włączone jest pole „Bloki” (niżej), kilka układów strona rozpoznaje sama:
-
-      • Punkt listy zaczynający się pogrubieniem = kafelek.
-
-      • Lista numerowana z pogrubionym początkiem = oś kroków.
-
-      • Punkt z rolą kursywą i nazwiskiem pogrubionym = kontakt.
-
-      • Lista samych linków = lista plików (PDF / strona).
-
-      • Nagłówek 3 zakończony znakiem „?” = rozwijane pytanie.
-
-      • Tekst nad listą (Seminaria, Konferencje, Aktualności…): lista stoi pod całym tekstem, chyba że jest kotwica — np. na stronie Publikacje tekst pod nagłówkiem 2 „Czasopisma redagowane w Instytucie” stoi nad listą czasopism.
-
-      • Plik PDF: wgraj w „Media” i wklej link.
-
-      • Akapit zaczynający się od dwuliterowego skrótu z kropką („Np.”, „Dr.”, „No.”) edytor zapisze jako listę numerowaną „1.” — zacznij akapit inaczej albo pogrub skrót.
-
-      Więcej: ściągawka edytora (dok/sciagawka-edytora.md w Web-Core).
+    description: Tekst strony; nagłówek 2 tworzy sekcję. Opcja Bloki włącza układy cech, etapów, kontaktów, plików
+      i pytań z list w tekście.
   - name: tytul_en
     label: Tytuł EN
     type: string
+    description: Angielska wersja pola Tytuł; puste oznacza użycie wersji polskiej.
   - name: tresc_en
     label: Treść EN
-    description: Cała strona po angielsku, w tym samym układzie co Treść (nagłówki sekcji po angielsku). Puste = strona angielska pokaże treść polską.
+    description: Tekst strony po angielsku; puste oznacza wyświetlanie tekstu polskiego. Układ treści jest taki
+      sam jak w polskim opisie.
     type: rich-text
     options:
       format: markdown
@@ -513,15 +332,19 @@ content:
   - name: opis
     label: Krótki opis (pod tytułem i w Google)
     type: text
+    description: Opis strony do wyszukiwarek i udostępniania linku.
   - name: opis_en
     label: 'EN: opis'
     type: text
+    description: Angielska wersja pola Krótki opis (pod tytułem i w Google); puste oznacza użycie wersji polskiej.
   - name: haslo
-    label: Hasło na banerze (jedna linia; liczby w banerze pokażą się tylko razem z hasłem)
+    label: Hasło w nagłówku
     type: string
+    description: Krótkie hasło w nagłówku, widoczne razem z liczbami. Na okładce działu służy również jako podpis.
   - name: haslo_en
     label: 'EN: hasło na banerze'
     type: string
+    description: Angielskie hasło; puste pole nie zastępuje go polskim hasłem.
   - name: pasek_boczny
     label: 'Prawy pasek: spis „Na tej stronie”, menu działu czy oba (puste = domyślnie tylko spis)'
     type: select
@@ -535,11 +358,20 @@ content:
         label: Tylko menu działu (podstrony)
       - name: brak
         label: Bez prawego paska (strona na całą szerokość)
+    description: Spis sekcji jest widoczny przy opcji Spis lub Oba. Menu i Brak wyłączają spis; ta wersja strony
+      nie wyświetla bocznego menu działu.
   - name: bloki
     label: Kafelki, oś i kontakty z list — zob. ściągawka
     type: boolean
     default: false
-    description: 'Włączone: listy w treści stają się blokami (kafelki, oś kroków, kontakty, lista plików, rozwijane pytania) — opis przy polu „Treść”. Wyłączone: zwykłe listy.'
+    description: 'Włącz, aby z list w tekście powstawały bloki treści: cechy, etapy, kontakty, pliki i pytania.'
+  - name: opublikowany
+    label: Dotychczasowe uwzględnianie w zestawieniach
+    type: boolean
+    hidden: true
+    default: true
+    description: Zachowuje dotychczasową widoczność w zestawieniach i indeksowanie. To osobna opcja od statusu publikacji.
+  description: Treść strony Deklaracja dostępności. Adres i miejsce w menu pozostają ustawiane osobno.
 - name: prywatnosc
   label: Polityka prywatności
   type: file
@@ -550,40 +382,35 @@ content:
     label: Tytuł
     type: string
     required: true
+    description: Nazwa strony lub wpisu, widoczna także na odpowiednich listach i w wynikach wyszukiwania.
+  - name: status_publikacji
+    label: Status publikacji
+    type: select
+    required: true
+    default: oficjalna
+    description: Zapisuje wybór do przyszłej publikacji. Obecnie nie zmienia widoczności. Podgląd jest publiczny.
+    options:
+      values:
+      - name: oficjalna
+        label: Opublikowana — strona oficjalna i podgląd
+      - name: podglad
+        label: Tylko podgląd
   - name: body
     label: Treść
     type: rich-text
     options:
       format: markdown
       path: public/pliki/ustawienia
-    description: |-
-      Piszesz jak w zwykłym edytorze; akapity oddziela Enter. Nagłówek 2 = nowa sekcja (pojawi się w spisie „Na tej stronie”).
-
-      Gdy włączone jest pole „Bloki” (niżej), kilka układów strona rozpoznaje sama:
-
-      • Punkt listy zaczynający się pogrubieniem = kafelek.
-
-      • Lista numerowana z pogrubionym początkiem = oś kroków.
-
-      • Punkt z rolą kursywą i nazwiskiem pogrubionym = kontakt.
-
-      • Lista samych linków = lista plików (PDF / strona).
-
-      • Nagłówek 3 zakończony znakiem „?” = rozwijane pytanie.
-
-      • Tekst nad listą (Seminaria, Konferencje, Aktualności…): lista stoi pod całym tekstem, chyba że jest kotwica — np. na stronie Publikacje tekst pod nagłówkiem 2 „Czasopisma redagowane w Instytucie” stoi nad listą czasopism.
-
-      • Plik PDF: wgraj w „Media” i wklej link.
-
-      • Akapit zaczynający się od dwuliterowego skrótu z kropką („Np.”, „Dr.”, „No.”) edytor zapisze jako listę numerowaną „1.” — zacznij akapit inaczej albo pogrub skrót.
-
-      Więcej: ściągawka edytora (dok/sciagawka-edytora.md w Web-Core).
+    description: Tekst strony; nagłówek 2 tworzy sekcję. Opcja Bloki włącza układy cech, etapów, kontaktów, plików
+      i pytań z list w tekście.
   - name: tytul_en
     label: Tytuł EN
     type: string
+    description: Angielska wersja pola Tytuł; puste oznacza użycie wersji polskiej.
   - name: tresc_en
     label: Treść EN
-    description: Cała strona po angielsku, w tym samym układzie co Treść (nagłówki sekcji po angielsku). Puste = strona angielska pokaże treść polską.
+    description: Tekst strony po angielsku; puste oznacza wyświetlanie tekstu polskiego. Układ treści jest taki
+      sam jak w polskim opisie.
     type: rich-text
     options:
       format: markdown
@@ -591,15 +418,19 @@ content:
   - name: opis
     label: Krótki opis (pod tytułem i w Google)
     type: text
+    description: Opis strony do wyszukiwarek i udostępniania linku.
   - name: opis_en
     label: 'EN: opis'
     type: text
+    description: Angielska wersja pola Krótki opis (pod tytułem i w Google); puste oznacza użycie wersji polskiej.
   - name: haslo
-    label: Hasło na banerze (jedna linia; liczby w banerze pokażą się tylko razem z hasłem)
+    label: Hasło w nagłówku
     type: string
+    description: Krótkie hasło w nagłówku, widoczne razem z liczbami. Na okładce działu służy również jako podpis.
   - name: haslo_en
     label: 'EN: hasło na banerze'
     type: string
+    description: Angielskie hasło; puste pole nie zastępuje go polskim hasłem.
   - name: pasek_boczny
     label: 'Prawy pasek: spis „Na tej stronie”, menu działu czy oba (puste = domyślnie tylko spis)'
     type: select
@@ -613,11 +444,20 @@ content:
         label: Tylko menu działu (podstrony)
       - name: brak
         label: Bez prawego paska (strona na całą szerokość)
+    description: Spis sekcji jest widoczny przy opcji Spis lub Oba. Menu i Brak wyłączają spis; ta wersja strony
+      nie wyświetla bocznego menu działu.
   - name: bloki
     label: Kafelki, oś i kontakty z list — zob. ściągawka
     type: boolean
     default: false
-    description: 'Włączone: listy w treści stają się blokami (kafelki, oś kroków, kontakty, lista plików, rozwijane pytania) — opis przy polu „Treść”. Wyłączone: zwykłe listy.'
+    description: 'Włącz, aby z list w tekście powstawały bloki treści: cechy, etapy, kontakty, pliki i pytania.'
+  - name: opublikowany
+    label: Dotychczasowe uwzględnianie w zestawieniach
+    type: boolean
+    hidden: true
+    default: true
+    description: Zachowuje dotychczasową widoczność w zestawieniach i indeksowanie. To osobna opcja od statusu publikacji.
+  description: Treść strony Polityka prywatności. Adres i miejsce w menu pozostają ustawiane osobno.
 - name: o-stronie
   label: O stronie
   type: file
@@ -628,40 +468,35 @@ content:
     label: Tytuł
     type: string
     required: true
+    description: Nazwa strony lub wpisu, widoczna także na odpowiednich listach i w wynikach wyszukiwania.
+  - name: status_publikacji
+    label: Status publikacji
+    type: select
+    required: true
+    default: oficjalna
+    description: Zapisuje wybór do przyszłej publikacji. Obecnie nie zmienia widoczności. Podgląd jest publiczny.
+    options:
+      values:
+      - name: oficjalna
+        label: Opublikowana — strona oficjalna i podgląd
+      - name: podglad
+        label: Tylko podgląd
   - name: body
     label: Treść
     type: rich-text
     options:
       format: markdown
       path: public/pliki/ustawienia
-    description: |-
-      Piszesz jak w zwykłym edytorze; akapity oddziela Enter. Nagłówek 2 = nowa sekcja (pojawi się w spisie „Na tej stronie”).
-
-      Gdy włączone jest pole „Bloki” (niżej), kilka układów strona rozpoznaje sama:
-
-      • Punkt listy zaczynający się pogrubieniem = kafelek.
-
-      • Lista numerowana z pogrubionym początkiem = oś kroków.
-
-      • Punkt z rolą kursywą i nazwiskiem pogrubionym = kontakt.
-
-      • Lista samych linków = lista plików (PDF / strona).
-
-      • Nagłówek 3 zakończony znakiem „?” = rozwijane pytanie.
-
-      • Tekst nad listą (Seminaria, Konferencje, Aktualności…): lista stoi pod całym tekstem, chyba że jest kotwica — np. na stronie Publikacje tekst pod nagłówkiem 2 „Czasopisma redagowane w Instytucie” stoi nad listą czasopism.
-
-      • Plik PDF: wgraj w „Media” i wklej link.
-
-      • Akapit zaczynający się od dwuliterowego skrótu z kropką („Np.”, „Dr.”, „No.”) edytor zapisze jako listę numerowaną „1.” — zacznij akapit inaczej albo pogrub skrót.
-
-      Więcej: ściągawka edytora (dok/sciagawka-edytora.md w Web-Core).
+    description: Tekst strony; nagłówek 2 tworzy sekcję. Opcja Bloki włącza układy cech, etapów, kontaktów, plików
+      i pytań z list w tekście.
   - name: tytul_en
     label: Tytuł EN
     type: string
+    description: Angielska wersja pola Tytuł; puste oznacza użycie wersji polskiej.
   - name: tresc_en
     label: Treść EN
-    description: Cała strona po angielsku, w tym samym układzie co Treść (nagłówki sekcji po angielsku). Puste = strona angielska pokaże treść polską.
+    description: Tekst strony po angielsku; puste oznacza wyświetlanie tekstu polskiego. Układ treści jest taki
+      sam jak w polskim opisie.
     type: rich-text
     options:
       format: markdown
@@ -669,15 +504,19 @@ content:
   - name: opis
     label: Krótki opis (pod tytułem i w Google)
     type: text
+    description: Opis strony do wyszukiwarek i udostępniania linku.
   - name: opis_en
     label: 'EN: opis'
     type: text
+    description: Angielska wersja pola Krótki opis (pod tytułem i w Google); puste oznacza użycie wersji polskiej.
   - name: haslo
-    label: Hasło na banerze (telefon)
+    label: Hasło w nagłówku
     type: string
+    description: Krótkie hasło w nagłówku, widoczne razem z liczbami. Na okładce działu służy również jako podpis.
   - name: haslo_en
     label: 'EN: hasło na banerze'
     type: string
+    description: Angielskie hasło; puste pole nie zastępuje go polskim hasłem.
   - name: pasek_boczny
     label: 'Prawy pasek: spis „Na tej stronie”, menu działu czy oba (puste = domyślnie tylko spis)'
     type: select
@@ -691,8 +530,17 @@ content:
         label: Tylko menu działu (podstrony)
       - name: brak
         label: Bez prawego paska (strona na całą szerokość)
+    description: Spis sekcji jest widoczny przy opcji Spis lub Oba. Menu i Brak wyłączają spis; ta wersja strony
+      nie wyświetla bocznego menu działu.
   - name: bloki
     label: Kafelki, oś i kontakty z list — zob. ściągawka
     type: boolean
     default: false
-    description: 'Włączone: listy w treści stają się blokami (kafelki, oś kroków, kontakty, lista plików, rozwijane pytania) — opis przy polu „Treść”. Wyłączone: zwykłe listy.'
+    description: 'Włącz, aby z list w tekście powstawały bloki treści: cechy, etapy, kontakty, pliki i pytania.'
+  - name: opublikowany
+    label: Dotychczasowe uwzględnianie w zestawieniach
+    type: boolean
+    hidden: true
+    default: true
+    description: Zachowuje dotychczasową widoczność w zestawieniach i indeksowanie. To osobna opcja od statusu publikacji.
+  description: Treść strony O stronie. Adres i miejsce w menu pozostają ustawiane osobno.

@@ -1,4 +1,5 @@
 ---
+status_publikacji: oficjalna
 tytul: "Deklaracja dostępności"
 opis: "Deklaracja dostępności strony internetowej Instytutu Matematycznego UWr."
 tytul_en: "Accessibility statement"

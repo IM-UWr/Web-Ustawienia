@@ -1,4 +1,5 @@
 ---
+status_publikacji: oficjalna
 tytul: "Polityka prywatności"
 opis: "Jakie dane zbiera strona Instytutu Matematycznego UWr."
 tytul_en: "Privacy policy"

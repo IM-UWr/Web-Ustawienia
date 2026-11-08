@@ -15,16 +15,21 @@
               "etykieta_en": "Management",
               "opis": "dyrekcja i Rada Instytutu",
               "opis_en": "directors and Institute Council",
-              "adres": "/instytut/wladze"
+              "adres": "/instytut/wladze",
+              "w_menu": true,
+              "na_stronie_glownej": false
             },
             {
               "etykieta": "Pracownicy",
               "etykieta_en": "Staff",
               "opis": "spis osób, pokoje, kontakt",
               "opis_en": "people, rooms, contact",
-              "adres": "/pracownicy"
+              "adres": "/pracownicy",
+              "w_menu": true,
+              "na_stronie_glownej": false
             }
-          ]
+          ],
+          "w_menu": true
         },
         {
           "nazwa": "Organizacja",
@@ -37,16 +42,21 @@
               "etykieta_en": "Structure and departments",
               "opis": "osiem zakładów i pracownia",
               "opis_en": "eight departments and a unit",
-              "adres": "/instytut/struktura"
+              "adres": "/instytut/struktura",
+              "w_menu": true,
+              "na_stronie_glownej": false
             },
             {
               "etykieta": "Kontakt",
               "etykieta_en": "Contact",
               "opis": "adres, sekretariat, dojazd",
               "opis_en": "address, office, directions",
-              "adres": "/instytut/kontakt"
+              "adres": "/instytut/kontakt",
+              "w_menu": true,
+              "na_stronie_glownej": false
             }
-          ]
+          ],
+          "w_menu": true
         },
         {
           "nazwa": "Więcej",
@@ -59,19 +69,26 @@
               "etykieta_en": "IT infrastructure",
               "opis": "konta, sieć, drukarki",
               "opis_en": "accounts, network, printers",
-              "adres": "/instytut/infrastruktura-informatyczna"
+              "adres": "/instytut/infrastruktura-informatyczna",
+              "w_menu": true,
+              "na_stronie_glownej": false
             },
             {
               "etykieta": "Biblioteka",
               "etykieta_en": "Library (in Polish)",
               "opis": "Biblioteka Matematyczna",
               "opis_en": "Mathematics Library",
-              "adres": "https://wmi.uwr.edu.pl/biblioteka-wydzialowa/"
+              "adres": "https://wmi.uwr.edu.pl/biblioteka-wydzialowa/",
+              "w_menu": true,
+              "na_stronie_glownej": false
             }
-          ]
+          ],
+          "w_menu": true
         }
       ],
-      "adres": "/instytut"
+      "adres": "/instytut",
+      "w_menu": true,
+      "w_pasku": true
     },
     {
       "etykieta": "Nauka",
@@ -88,23 +105,30 @@
               "etykieta_en": "Seminars",
               "opis": "cotygodniowe seminaria zakładów",
               "opis_en": "weekly department seminars",
-              "adres": "/seminaria"
+              "adres": "/seminaria",
+              "w_menu": true,
+              "na_stronie_glownej": false
             },
             {
               "etykieta": "Konferencje",
               "etykieta_en": "Conferences",
               "opis": "organizowane przez Instytut",
               "opis_en": "organised by the Institute",
-              "adres": "/nauka/konferencje"
+              "adres": "/nauka/konferencje",
+              "w_menu": true,
+              "na_stronie_glownej": false
             },
             {
               "etykieta": "Obrony doktorskie",
               "etykieta_en": "PhD defences",
               "opis": "rozprawy i terminy obron",
               "opis_en": "theses and defence dates",
-              "adres": "/obrony-doktorskie"
+              "adres": "/obrony-doktorskie",
+              "w_menu": true,
+              "na_stronie_glownej": false
             }
-          ]
+          ],
+          "w_menu": true
         },
         {
           "nazwa": "Badania",
@@ -117,23 +141,30 @@
               "etykieta_en": "Grants",
               "opis": "realizowane i zakończone",
               "opis_en": "ongoing and completed",
-              "adres": "/nauka/granty"
+              "adres": "/nauka/granty",
+              "w_menu": true,
+              "na_stronie_glownej": false
             },
             {
               "etykieta": "Publikacje",
               "etykieta_en": "Publications",
               "opis": "wykazy roczne",
               "opis_en": "annual lists",
-              "adres": "/nauka/publikacje"
+              "adres": "/nauka/publikacje",
+              "w_menu": true,
+              "na_stronie_glownej": false
             },
             {
               "etykieta": "Sukcesy",
               "etykieta_en": "Achievements",
               "opis": "nagrody i wyróżnienia",
               "opis_en": "awards and distinctions",
-              "adres": "/nauka/sukcesy"
+              "adres": "/nauka/sukcesy",
+              "w_menu": true,
+              "na_stronie_glownej": false
             }
-          ]
+          ],
+          "w_menu": true
         },
         {
           "nazwa": "Stopnie naukowe",
@@ -146,19 +177,26 @@
               "etykieta_en": "Doctoral school",
               "opis": "Kolegium Doktorskie Matematyki",
               "opis_en": "Doctoral College of Mathematics",
-              "adres": "/studia/szkola-doktorska"
+              "adres": "/studia/szkola-doktorska",
+              "w_menu": true,
+              "na_stronie_glownej": false
             },
             {
               "etykieta": "Rada Dyscypliny Matematyka",
               "etykieta_en": "Mathematics Discipline Council (in Polish)",
               "opis": "doktoraty i habilitacje",
               "opis_en": "PhDs and habilitations",
-              "adres": "https://bip.uni.wroc.pl/1436/237/sklad-rady-dyscypliny-naukowej-matematyka.html"
+              "adres": "https://bip.uni.wroc.pl/1436/237/sklad-rady-dyscypliny-naukowej-matematyka.html",
+              "w_menu": true,
+              "na_stronie_glownej": false
             }
-          ]
+          ],
+          "w_menu": true
         }
       ],
-      "adres": "/nauka"
+      "adres": "/nauka",
+      "w_menu": true,
+      "w_pasku": true
     },
     {
       "etykieta": "Studia",
@@ -171,14 +209,82 @@
           "opis_en": "mathematics, SIAD, ISIM, PhD",
           "linki": [
             {
+              "etykieta": "Matematyka",
+              "etykieta_en": "Mathematics",
+              "opis": "I i II stopień, pięć specjalności",
+              "opis_en": "BSc and MSc, five specialisations",
+              "adres": "/studia/matematyka",
+              "w_menu": true,
+              "na_stronie_glownej": true,
+              "kafelek_nazwa": "Matematyka",
+              "kafelek_nazwa_en": "Mathematics",
+              "kafelek_poziom": "I i II stopień",
+              "kafelek_poziom_en": "BSc and MSc",
+              "kafelek_opis": "Nowy program studiów od roku 2026/27.",
+              "kafelek_opis_en": "New curriculum from 2026/27."
+            },
+            {
+              "etykieta": "Sztuczna inteligencja w analizie danych",
+              "etykieta_en": "AI in Data Science",
+              "opis": "Sztuczna inteligencja w analizie danych",
+              "opis_en": "Artificial Intelligence in Data Science",
+              "adres": "/studia/siad",
+              "w_menu": true,
+              "na_stronie_glownej": true,
+              "kafelek_nazwa": "Sztuczna inteligencja w analizie danych",
+              "kafelek_nazwa_en": "AI in Data Science",
+              "kafelek_poziom": "Kierunek",
+              "kafelek_poziom_en": "Programme",
+              "kafelek_opis": "Studia I stopnia od 2025/26.",
+              "kafelek_opis_en": "Bachelor's programme since 2025/26."
+            },
+            {
+              "etykieta": "ISIM",
+              "etykieta_en": "ISIM",
+              "opis": "Indywidualne Studia Informatyczno-Matematyczne",
+              "opis_en": "Individual Studies in Computer Science and Mathematics",
+              "adres": "/studia/isim",
+              "w_menu": true,
+              "na_stronie_glownej": true,
+              "kafelek_nazwa": "ISIM",
+              "kafelek_nazwa_en": "ISIM",
+              "kafelek_poziom": "Kierunek",
+              "kafelek_poziom_en": "Programme",
+              "kafelek_opis": "Studia I stopnia wspólnie z Instytutem Informatyki.",
+              "kafelek_opis_en": "Bachelor's programme run jointly with the Institute of Computer Science."
+            },
+            {
+              "etykieta": "Szkoła doktorska",
+              "etykieta_en": "Doctoral school",
+              "opis": "Kolegium Doktorskie Matematyki",
+              "opis_en": "Doctoral College of Mathematics",
+              "adres": "/studia/szkola-doktorska",
+              "w_menu": true,
+              "na_stronie_glownej": true,
+              "kafelek_nazwa": "Szkoła doktorska",
+              "kafelek_nazwa_en": "Doctoral school",
+              "kafelek_poziom": "III stopień",
+              "kafelek_poziom_en": "PhD",
+              "kafelek_opis": "Kolegium Doktorskie Matematyki.",
+              "kafelek_opis_en": "Doctoral College of Mathematics."
+            },
+            {
               "etykieta": "Studia podyplomowe",
               "etykieta_en": "Postgraduate studies",
               "opis": "kwalifikacje do nauczania",
               "opis_en": "teaching qualifications",
-              "adres": "/studia/podyplomowe"
+              "adres": "/studia/podyplomowe",
+              "na_stronie_glownej": true,
+              "kafelek_nazwa": "Nauczanie matematyki",
+              "kafelek_nazwa_en": "Teaching mathematics",
+              "kafelek_poziom": "Podyplomowe",
+              "kafelek_poziom_en": "Postgraduate",
+              "kafelek_opis": "Studia kwalifikacyjne, 3 semestry.",
+              "kafelek_opis_en": "Qualification programme, 3 semesters.",
+              "w_menu": true
             }
           ],
-          "kierunki": true
+          "w_menu": true
         },
         {
           "nazwa": "Na co dzień",
@@ -191,30 +297,39 @@
               "etykieta_en": "Timetable",
               "opis": "przedmioty, terminy, sale",
               "opis_en": "courses, times, rooms",
-              "adres": "/studia/plan-zajec"
+              "adres": "/studia/plan-zajec",
+              "w_menu": true,
+              "na_stronie_glownej": false
             },
             {
               "etykieta": "Rok akademicki",
               "etykieta_en": "Academic year",
               "opis": "semestry, sesje, przerwy",
               "opis_en": "semesters, exam sessions, breaks",
-              "adres": "/studia/rok-akademicki"
+              "adres": "/studia/rok-akademicki",
+              "w_menu": true,
+              "na_stronie_glownej": false
             },
             {
               "etykieta": "Zajęcia i konsultacje",
               "etykieta_en": "Classes and office hours",
               "opis": "zapisy i dyżury",
               "opis_en": "enrolment and office hours",
-              "adres": "/studia/zajecia"
+              "adres": "/studia/zajecia",
+              "w_menu": true,
+              "na_stronie_glownej": false
             },
             {
               "etykieta": "Pierwszy rok",
               "etykieta_en": "First year",
               "opis": "pierwsze kroki na studiach",
               "opis_en": "first steps at university",
-              "adres": "/studia/pierwszy-rok"
+              "adres": "/studia/pierwszy-rok",
+              "w_menu": true,
+              "na_stronie_glownej": false
             }
-          ]
+          ],
+          "w_menu": true
         },
         {
           "nazwa": "Dyplom i sprawy",
@@ -227,45 +342,53 @@
               "etykieta_en": "Exams and diploma",
               "opis": "sesja i egzamin dyplomowy",
               "opis_en": "exam session and final exam",
-              "adres": "/studia/egzaminy-i-dyplom"
+              "adres": "/studia/egzaminy-i-dyplom",
+              "w_menu": true,
+              "na_stronie_glownej": false
             },
             {
               "etykieta": "Procedura dyplomowania",
               "etykieta_en": "Diploma procedure",
               "opis": "praca, recenzje, obrona",
               "opis_en": "thesis, reviews, defence",
-              "adres": "/studia/procedura-dyplomowania"
+              "adres": "/studia/procedura-dyplomowania",
+              "w_menu": true,
+              "na_stronie_glownej": false
             },
             {
               "etykieta": "Sprawy studenckie",
               "etykieta_en": "Student affairs",
               "opis": "wnioski, stypendia, dziekanat",
               "opis_en": "requests, scholarships, dean’s office",
-              "adres": "/studia/sprawy-studenckie"
+              "adres": "/studia/sprawy-studenckie",
+              "w_menu": true,
+              "na_stronie_glownej": false
             },
             {
               "etykieta": "Program MOST",
               "etykieta_en": "MOST programme",
               "opis": "semestr na innej polskiej uczelni",
               "opis_en": "a semester at another Polish university",
-              "adres": "/studia/program-most"
+              "adres": "/studia/program-most",
+              "w_menu": true,
+              "na_stronie_glownej": false
             },
             {
               "etykieta": "Skrypty i materiały",
               "etykieta_en": "Lecture notes and materials",
               "opis": "materiały do przedmiotów",
               "opis_en": "course materials",
-              "adres": "/studia/skrypty"
+              "adres": "/studia/skrypty",
+              "w_menu": true,
+              "na_stronie_glownej": false
             }
-          ]
+          ],
+          "w_menu": true
         }
       ],
-      "adres": "/studia"
-    },
-    {
-      "etykieta": "Aktualności",
-      "etykieta_en": "News",
-      "adres": "/aktualnosci"
+      "adres": "/studia",
+      "w_menu": true,
+      "w_pasku": true
     },
     {
       "etykieta": "Popularyzacja",
@@ -282,23 +405,30 @@
               "etykieta_en": "For pupils",
               "opis": "kółka, obozy i konkursy",
               "opis_en": "clubs, camps and competitions",
-              "adres": "/popularyzacja/uczniowie"
+              "adres": "/popularyzacja/uczniowie",
+              "w_menu": true,
+              "na_stronie_glownej": false
             },
             {
               "etykieta": "Dla nauczycieli",
               "etykieta_en": "For teachers",
               "opis": "szkolenia",
               "opis_en": "training",
-              "adres": "/popularyzacja/nauczyciele"
+              "adres": "/popularyzacja/nauczyciele",
+              "w_menu": true,
+              "na_stronie_glownej": false
             },
             {
               "etykieta": "Dla wszystkich",
               "etykieta_en": "For everyone",
               "opis": "wykłady popularnonaukowe",
               "opis_en": "popular science lectures",
-              "adres": "/popularyzacja/wszyscy"
+              "adres": "/popularyzacja/wszyscy",
+              "w_menu": true,
+              "na_stronie_glownej": false
             }
-          ]
+          ],
+          "w_menu": true
         },
         {
           "nazwa": "Partnerzy",
@@ -311,31 +441,50 @@
               "etykieta_en": "Wrocław Mathematicians Foundation (in Polish)",
               "opis": "fmw.math.uni.wroc.pl",
               "opis_en": "fmw.math.uni.wroc.pl",
-              "adres": "https://fmw.math.uni.wroc.pl/"
+              "adres": "https://fmw.math.uni.wroc.pl/",
+              "w_menu": true,
+              "na_stronie_glownej": false
             },
             {
               "etykieta": "Wrocławski Portal Matematyczny",
               "etykieta_en": "Wrocław Mathematical Portal (in Polish)",
               "opis": "matematyka.wroc.pl",
               "opis_en": "matematyka.wroc.pl",
-              "adres": "https://www.matematyka.wroc.pl/"
+              "adres": "https://www.matematyka.wroc.pl/",
+              "w_menu": true,
+              "na_stronie_glownej": false
             },
             {
               "etykieta": "Wrocławski Oddział PTM",
               "etykieta_en": "Polish Mathematical Society, Wrocław Branch (in Polish)",
               "opis": "ptm.math.uni.wroc.pl",
               "opis_en": "ptm.math.uni.wroc.pl",
-              "adres": "https://ptm.math.uni.wroc.pl/"
+              "adres": "https://ptm.math.uni.wroc.pl/",
+              "w_menu": true,
+              "na_stronie_glownej": false
             }
-          ]
+          ],
+          "w_menu": true
         }
       ],
-      "adres": "/popularyzacja"
+      "adres": "/popularyzacja",
+      "w_menu": true,
+      "w_pasku": true
+    },
+    {
+      "etykieta": "Aktualności",
+      "etykieta_en": "News",
+      "adres": "/aktualnosci",
+      "w_menu": true,
+      "w_pasku": true
     },
     {
       "etykieta": "Rekrutacja",
       "etykieta_en": "Admissions (in Polish)",
-      "adres": "https://studia-wmi.uwr.edu.pl/"
+      "adres": "https://studia-wmi.uwr.edu.pl/",
+      "w_menu": true,
+      "w_pasku": false,
+      "rekrutacja": true
     }
   ]
 }
