@@ -226,12 +226,17 @@ content:
       - name: etykieta
         label: Etykieta
         type: string
+        required: true
       - name: etykieta_en
         label: 'EN: etykieta'
         type: string
       - name: adres
         label: Adres
         type: string
+        required: true
+      - name: pozycja
+        type: boolean
+        hidden: true
     - name: studia
       label: Sekcja „Studiuj matematykę”
       type: object
@@ -339,6 +344,7 @@ content:
       - name: nazwa
         label: Nazwa
         type: string
+        required: true
       - name: logo
         label: Logo
         type: image
@@ -347,6 +353,9 @@ content:
       - name: adres
         label: Strona partnera
         type: string
+      - name: pozycja
+        type: boolean
+        hidden: true
   - name: skroty
     label: Kafelki „Na skróty”
     type: file
@@ -364,12 +373,14 @@ content:
       - name: etykieta
         label: Etykieta
         type: string
+        required: true
       - name: etykieta_en
         label: 'EN: etykieta'
         type: string
       - name: adres
         label: Adres (np. /pracownicy albo https://…)
         type: string
+        required: true
       - name: ikona
         label: Ikona
         type: select
@@ -393,6 +404,9 @@ content:
             label: Dokument
           - name: mail
             label: Koperta
+      - name: pozycja
+        type: boolean
+        hidden: true
   - name: nawigacja
     label: Menu główne
     type: file
@@ -450,6 +464,7 @@ content:
           - name: etykieta
             label: Etykieta
             type: string
+            required: true
           - name: etykieta_en
             label: 'EN: etykieta'
             type: string
@@ -462,6 +477,10 @@ content:
           - name: adres
             label: Adres
             type: string
+            required: true
+          - name: pozycja
+            type: boolean
+            hidden: true
 - name: deklaracja
   label: Deklaracja dostępności
   type: file
