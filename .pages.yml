@@ -1,5 +1,6 @@
 # Pages CMS — Web-Ustawienia: Ustawienia całej strony: menu, stopka, skróty, baner, nagłówki działów, tło i sekcje, deklaracja dostępności, polityka prywatności.
 # Wygenerowane przy migracji z Avean/IM-Website-test; pola „Opublikowany” usunięte (bez wersji roboczych).
+# Zlecenie 40: opisy formularzy (tylko właściciel; gdzie widać), Facebook i YouTube w stopce, podłączone zdjęcia nagłówków działów, usunięte resztki starego banera i przyciski okładki, ukryte hasła bez liczb; deklaracja, prywatność i „O stronie” w jawnym Markdownie.
 media:
   input: public/pliki
   output: /pliki
@@ -14,12 +15,14 @@ content:
   items:
   - name: ustawienia
     label: Strona główna i kontakt
+    description: Tylko właściciel. Okładka strony głównej (zdjęcie, tekst pod nazwą Instytutu, wydarzenia), sekcja „Studiuj matematykę” i menu „Studia”, zdjęcia w nagłówkach działów, kontakt i profile w stopce.
     type: file
     path: src/data/ustawienia.json
     format: json
     fields:
     - name: baner
       label: Baner na stronie głównej
+      description: Zdjęcie okładki strony głównej (pierwszy ekran). Rozmiar i kadr na komputerze i telefonie strona dobiera sama.
       type: object
       fields:
       - name: zdjecie
@@ -27,44 +30,21 @@ content:
         type: image
         options:
           path: public/pliki/baner
-      - name: zdjecie_male
-        label: Mniejsza wersja na telefony (opcjonalnie, ok. 1200 px)
-        hidden: true
-        type: image
-        options:
-          path: public/pliki/baner
-      - name: zdjecie_telefon
-        label: Zdjęcie na telefon (nieużywane)
-        type: image
-        hidden: true
-        options:
-          path: public/pliki/baner
       - name: opis
         label: Opis zdjęcia (dla niewidomych)
+        description: Co widać na zdjęciu, jednym zdaniem; czytają je czytniki ekranu. Np. „Kampus przy placu Grunwaldzkim o zmierzchu…”.
         type: string
       - name: opis_en
-        label: 'EN: opis zdjęcia'
-        type: string
-      - name: podpis
-        label: Podpis (np. Fot. Jan Kowalski)
-        hidden: true
-        type: string
-      - name: podpis_en
-        label: 'EN: podpis (np. Photo: Jan Kowalski)'
-        hidden: true
+        label: 'Opis zdjęcia EN'
         type: string
       - name: podpis_telefon
         label: Podpis na telefonie (nieużywany)
         type: string
         hidden: true
       - name: podpis_telefon_en
-        label: 'EN: podpis na telefonie (nieużywany)'
+        label: 'Podpis na telefonie EN (nieużywany)'
         type: string
         hidden: true
-      - name: kadr
-        label: Kadrowanie (np. center 55%)
-        hidden: true
-        type: string
     - name: logo
       label: Logo w nagłówku (opcjonalnie)
       type: image
@@ -105,8 +85,8 @@ content:
         - name: brak
           label: Brak
     - name: naglowki_podstron
-      label: Nagłówki podstron
-      hidden: true
+      label: Nagłówki działów
+      description: Zdjęcia w nagłówkach stron działów i ich podstron (komputer i telefon).
       type: object
       fields:
       - name: wariant
@@ -123,8 +103,10 @@ content:
             label: Sam rysunek
           - name: prosty
             label: Prosty
+        hidden: true
       - name: zdjecia
-        label: Zdjęcia działów (puste = sam rysunek)
+        label: Zdjęcia działów
+        description: Puste zdjęcie albo kadr = zdjęcie i kadr domyślne działu.
         type: object
         fields:
         - name: instytut
@@ -133,11 +115,13 @@ content:
           fields:
           - name: zdjecie
             label: Zdjęcie
+            description: Zdjęcie poziome, co najmniej ok. 1200 px szerokości. Puste = zdjęcie domyślne działu.
             type: image
             options:
               path: public/pliki/naglowki
           - name: kadr
-            label: Kadr (np. center 40%)
+            label: Kadr
+            description: "Który fragment zdjęcia widać, gdy strona je przycina: położenie w poziomie i w pionie w procentach, np. „50% 40%” (środek, trochę powyżej połowy). Działa na stronie działu; podstrony mają stały kadr. Puste = kadr domyślny."
             type: string
         - name: nauka
           label: Nauka
@@ -145,11 +129,13 @@ content:
           fields:
           - name: zdjecie
             label: Zdjęcie
+            description: Zdjęcie poziome, co najmniej ok. 1200 px szerokości. Puste = zdjęcie domyślne działu.
             type: image
             options:
               path: public/pliki/naglowki
           - name: kadr
-            label: Kadr (np. center 40%)
+            label: Kadr
+            description: "Który fragment zdjęcia widać, gdy strona je przycina: położenie w poziomie i w pionie w procentach, np. „50% 40%” (środek, trochę powyżej połowy). Działa na stronie działu; podstrony mają stały kadr. Puste = kadr domyślny."
             type: string
         - name: studia
           label: Studia
@@ -157,23 +143,28 @@ content:
           fields:
           - name: zdjecie
             label: Zdjęcie
+            description: Zdjęcie poziome, co najmniej ok. 1200 px szerokości. Puste = zdjęcie domyślne działu.
             type: image
             options:
               path: public/pliki/naglowki
           - name: kadr
-            label: Kadr (np. center 40%)
+            label: Kadr
+            description: "Który fragment zdjęcia widać, gdy strona je przycina: położenie w poziomie i w pionie w procentach, np. „50% 40%” (środek, trochę powyżej połowy). Działa na stronie działu; podstrony mają stały kadr. Puste = kadr domyślny."
             type: string
         - name: aktualnosci
           label: Aktualności
+          description: Nagłówki Aktualności, Kalendarza i listy „Warto wiedzieć”.
           type: object
           fields:
           - name: zdjecie
             label: Zdjęcie
+            description: Zdjęcie poziome, co najmniej ok. 1200 px szerokości. Puste = zdjęcie domyślne działu.
             type: image
             options:
               path: public/pliki/naglowki
           - name: kadr
-            label: Kadr (np. center 40%)
+            label: Kadr
+            description: "Który fragment zdjęcia widać, gdy strona je przycina: położenie w poziomie i w pionie w procentach, np. „48% 52%”. Puste = kadr domyślny."
             type: string
         - name: popularyzacja
           label: Popularyzacja
@@ -181,11 +172,13 @@ content:
           fields:
           - name: zdjecie
             label: Zdjęcie
+            description: Zdjęcie poziome, co najmniej ok. 1200 px szerokości. Puste = zdjęcie domyślne działu.
             type: image
             options:
               path: public/pliki/naglowki
           - name: kadr
-            label: Kadr (np. center 40%)
+            label: Kadr
+            description: "Który fragment zdjęcia widać, gdy strona je przycina: położenie w poziomie i w pionie w procentach, np. „50% 40%” (środek, trochę powyżej połowy). Działa na stronie działu; podstrony mają stały kadr. Puste = kadr domyślny."
             type: string
     - name: wydarzenia_dni_robocze
       label: 'Wydarzenia na stronie głównej: ile dni roboczych przed początkiem się pojawiają (sekcja znika, gdy nic nie ma)'
@@ -198,45 +191,24 @@ content:
       label: Tekst pod nazwą Instytutu
       type: text
     - name: wstep_en
-      label: 'EN: tekst pod nazwą'
+      label: 'Tekst pod nazwą EN'
       type: text
     - name: haslo
       label: Hasło na banerze (jedna linia; liczby w banerze pokażą się tylko razem z hasłem)
       hidden: true
       type: string
     - name: haslo_en
-      label: 'EN: hasło na banerze'
+      label: 'Hasło na banerze EN'
       hidden: true
       type: string
     - name: szukaj_haslo
       label: 'Hasło na banerze: Szukaj'
       type: string
-    - name: szukaj_haslo_en
-      label: 'EN: hasło na banerze: Szukaj'
-      type: string
-    - name: przyciski
-      label: Przyciski pod tekstem
       hidden: true
-      type: object
-      list:
-        collapsible:
-          collapsed: true
-          summary: "{etykieta}"
-      fields:
-      - name: etykieta
-        label: Etykieta
-        type: string
-        required: true
-      - name: etykieta_en
-        label: 'EN: etykieta'
-        type: string
-      - name: adres
-        label: Adres
-        type: string
-        required: true
-      - name: pozycja
-        type: boolean
-        hidden: true
+    - name: szukaj_haslo_en
+      label: 'Hasło na banerze: Szukaj EN'
+      type: string
+      hidden: true
     - name: studia
       label: Sekcja „Studiuj matematykę”
       type: object
@@ -245,13 +217,13 @@ content:
         label: Tytuł
         type: string
       - name: tytul_en
-        label: 'EN: tytuł'
+        label: 'Tytuł EN'
         type: string
       - name: opis
         label: Opis
         type: string
       - name: opis_en
-        label: 'EN: opis'
+        label: 'Opis EN'
         type: string
       - name: rekrutacja
         label: Link do rekrutacji
@@ -333,12 +305,12 @@ content:
         label: E-mail
         type: string
     - name: facebook
-      label: Facebook
-      hidden: true
+      label: Facebook (adres profilu)
+      description: Ikona z linkiem w stopce każdej strony, polskiej i angielskiej. Np. https://www.facebook.com/IMUWr. Puste = bez ikony.
       type: string
     - name: youtube
-      label: YouTube
-      hidden: true
+      label: YouTube (adres kanału)
+      description: Ikona z linkiem w stopce każdej strony, polskiej i angielskiej. Np. https://www.youtube.com/channel/…. Puste = bez ikony.
       type: string
     - name: archiwum
       label: Adres archiwum starej strony
@@ -376,6 +348,7 @@ content:
         hidden: true
   - name: skroty
     label: Kafelki „Na skróty”
+    description: Tylko właściciel. Pierwsze cztery kafelki widać na stronie głównej, w pasku „Szybki dostęp” pod okładką.
     type: file
     path: src/data/skroty.json
     format: json
@@ -393,7 +366,7 @@ content:
         type: string
         required: true
       - name: etykieta_en
-        label: 'EN: etykieta'
+        label: 'Etykieta EN'
         type: string
       - name: adres
         label: Adres (np. /pracownicy albo https://…)
@@ -427,6 +400,7 @@ content:
         hidden: true
   - name: nawigacja
     label: Menu główne
+    description: Tylko właściciel. Pozycje menu na górze każdej strony i ich rozwijane listy (komputer i telefon); grupy i linki widać też w polu ze stronami na stronach działów. Kierunki w menu „Studia” są w „Strona główna i kontakt”.
     type: file
     path: src/data/nawigacja.json
     format: json
@@ -443,7 +417,7 @@ content:
         label: Etykieta
         type: string
       - name: etykieta_en
-        label: 'EN: etykieta'
+        label: 'Etykieta EN'
         type: string
       - name: adres
         label: Adres (klik w napis; przy pozycji z rozwijaną listą — strona działu, np. /instytut)
@@ -460,13 +434,13 @@ content:
           label: Nazwa grupy
           type: string
         - name: nazwa_en
-          label: 'EN: nazwa grupy'
+          label: 'Nazwa grupy EN'
           type: string
         - name: opis
           label: Krótki opis na kafelku strony działu (komputer; puste = bez opisu)
           type: string
         - name: opis_en
-          label: 'EN: krótki opis'
+          label: 'Krótki opis EN'
           type: string
         - name: kierunki
           label: Na początku grupy wstaw automatycznie kierunki studiów (z sekcji Kierunki)
@@ -484,13 +458,13 @@ content:
             type: string
             required: true
           - name: etykieta_en
-            label: 'EN: etykieta'
+            label: 'Etykieta EN'
             type: string
           - name: opis
             label: Krótki opis w polu ze stronami na stronie działu (komputer; puste = bez opisu)
             type: string
           - name: opis_en
-            label: 'EN: krótki opis'
+            label: 'Krótki opis EN'
             type: string
           - name: adres
             label: Adres
@@ -501,6 +475,7 @@ content:
             hidden: true
 - name: deklaracja
   label: Deklaracja dostępności
+  description: Tekst strony „Deklaracja dostępności” (link w stopce). Treść w jawnym Markdownie, jak w Studiach.
   type: file
   path: src/content/strony/deklaracja-dostepnosci.md
   format: yaml-frontmatter
@@ -509,54 +484,42 @@ content:
     label: Tytuł
     type: string
     required: true
+  - name: tytul_en
+    label: Tytuł EN
+    type: string
   - name: body
     label: Treść
     type: code
     options:
       format: markdown
     description: |-
-      Piszesz jak w zwykłym edytorze; akapity oddziela Enter. Nagłówek 2 = nowa sekcja (pojawi się w spisie „Na tej stronie”).
-
-      Gdy włączone jest pole „Bloki” (niżej), kilka układów strona rozpoznaje sama:
-
-      • Punkt listy zaczynający się pogrubieniem = kafelek.
-
-      • Lista numerowana z pogrubionym początkiem = oś kroków.
-
-      • Punkt z rolą kursywą i nazwiskiem pogrubionym = kontakt.
-
-      • Lista samych linków = lista plików (PDF / strona).
-
-      • Nagłówek 3 zakończony znakiem „?” = rozwijane pytanie.
-
-      • Tekst nad listą (Seminaria, Konferencje, Aktualności…): lista stoi pod całym tekstem, chyba że jest kotwica — np. na stronie Publikacje tekst pod nagłówkiem 2 „Czasopisma redagowane w Instytucie” stoi nad listą czasopism.
-
-      • Plik PDF: wgraj w „Media” i wklej link.
-
-      • Akapit zaczynający się od dwuliterowego skrótu z kropką („Np.”, „Dr.”, „No.”) edytor zapisze jako listę numerowaną „1.” — zacznij akapit inaczej albo pogrub skrót.
-
-      Więcej: ściągawka edytora (dok/sciagawka-edytora.md w Web-Core).
-  - name: tytul_en
-    label: Tytuł EN
-    type: string
+      Jawny Markdown: ## rozpoczyna sekcję i pozycję spisu; {#id} zachowuje adres sekcji. Zwykły tekst jest prozą domyślnie; nie wymaga otaczających znaczników. Specjalne układy wymagają znaczników, np. :::kafelki, :::etapy, :::zakladki. Komentarze <!-- … --> objaśniają bloki; na stronie ich nie widać. Zachowaj pasujące końcowe dwukropki. Plik PDF: wgraj w „Media” i wklej link. Wygląd sprawdzaj po przebudowaniu strony (Podgląd).
   - name: tresc_en
     label: Treść EN
-    description: Cała strona po angielsku, w tym samym układzie co Treść (nagłówki sekcji po angielsku). Puste = strona angielska pokaże treść polską.
+    description: "Jawny Markdown: ## rozpoczyna sekcję i pozycję spisu; {#id} zachowuje adres sekcji. Zwykły tekst jest prozą domyślnie; nie wymaga otaczających znaczników. Specjalne układy wymagają znaczników, np. :::kafelki, :::etapy, :::zakladki. Komentarze <!-- … --> objaśniają bloki; na stronie ich nie widać. Zachowaj pasujące końcowe dwukropki. Plik PDF: wgraj w „Media” i wklej link. Wygląd sprawdzaj po przebudowaniu strony (Podgląd). Puste = strona angielska pokaże treść polską."
     type: code
     options:
       format: markdown
+  - name: format_tresci
+    label: Format treści
+    type: string
+    hidden: true
+    default: jawne
   - name: opis
-    label: Krótki opis (pod tytułem i w Google)
+    label: Krótki opis (Google i podgląd linku)
+    description: Na samej stronie się nie wyświetla (baner pokazuje tytuł). Puste = ogólny opis serwisu.
     type: text
   - name: opis_en
-    label: 'EN: opis'
+    label: 'Krótki opis EN'
     type: text
   - name: haslo
     label: Hasło na banerze (jedna linia; liczby w banerze pokażą się tylko razem z hasłem)
     type: string
+    hidden: true
   - name: haslo_en
-    label: 'EN: hasło na banerze'
+    label: 'Hasło na banerze EN'
     type: string
+    hidden: true
   - name: pasek_boczny
     label: 'Prawy pasek: spis „Na tej stronie”, menu działu czy oba (puste = domyślnie tylko spis)'
     type: select
@@ -575,8 +538,10 @@ content:
     type: boolean
     default: false
     description: 'Włączone: listy w treści stają się blokami (kafelki, oś kroków, kontakty, lista plików, rozwijane pytania) — opis przy polu „Treść”. Wyłączone: zwykłe listy.'
+    hidden: true
 - name: prywatnosc
   label: Polityka prywatności
+  description: Tekst strony „Polityka prywatności” (link w stopce). Treść w jawnym Markdownie, jak w Studiach.
   type: file
   path: src/content/strony/polityka-prywatnosci.md
   format: yaml-frontmatter
@@ -585,54 +550,42 @@ content:
     label: Tytuł
     type: string
     required: true
+  - name: tytul_en
+    label: Tytuł EN
+    type: string
   - name: body
     label: Treść
     type: code
     options:
       format: markdown
     description: |-
-      Piszesz jak w zwykłym edytorze; akapity oddziela Enter. Nagłówek 2 = nowa sekcja (pojawi się w spisie „Na tej stronie”).
-
-      Gdy włączone jest pole „Bloki” (niżej), kilka układów strona rozpoznaje sama:
-
-      • Punkt listy zaczynający się pogrubieniem = kafelek.
-
-      • Lista numerowana z pogrubionym początkiem = oś kroków.
-
-      • Punkt z rolą kursywą i nazwiskiem pogrubionym = kontakt.
-
-      • Lista samych linków = lista plików (PDF / strona).
-
-      • Nagłówek 3 zakończony znakiem „?” = rozwijane pytanie.
-
-      • Tekst nad listą (Seminaria, Konferencje, Aktualności…): lista stoi pod całym tekstem, chyba że jest kotwica — np. na stronie Publikacje tekst pod nagłówkiem 2 „Czasopisma redagowane w Instytucie” stoi nad listą czasopism.
-
-      • Plik PDF: wgraj w „Media” i wklej link.
-
-      • Akapit zaczynający się od dwuliterowego skrótu z kropką („Np.”, „Dr.”, „No.”) edytor zapisze jako listę numerowaną „1.” — zacznij akapit inaczej albo pogrub skrót.
-
-      Więcej: ściągawka edytora (dok/sciagawka-edytora.md w Web-Core).
-  - name: tytul_en
-    label: Tytuł EN
-    type: string
+      Jawny Markdown: ## rozpoczyna sekcję i pozycję spisu; {#id} zachowuje adres sekcji. Zwykły tekst jest prozą domyślnie; nie wymaga otaczających znaczników. Specjalne układy wymagają znaczników, np. :::kafelki, :::etapy, :::zakladki. Komentarze <!-- … --> objaśniają bloki; na stronie ich nie widać. Zachowaj pasujące końcowe dwukropki. Plik PDF: wgraj w „Media” i wklej link. Wygląd sprawdzaj po przebudowaniu strony (Podgląd).
   - name: tresc_en
     label: Treść EN
-    description: Cała strona po angielsku, w tym samym układzie co Treść (nagłówki sekcji po angielsku). Puste = strona angielska pokaże treść polską.
+    description: "Jawny Markdown: ## rozpoczyna sekcję i pozycję spisu; {#id} zachowuje adres sekcji. Zwykły tekst jest prozą domyślnie; nie wymaga otaczających znaczników. Specjalne układy wymagają znaczników, np. :::kafelki, :::etapy, :::zakladki. Komentarze <!-- … --> objaśniają bloki; na stronie ich nie widać. Zachowaj pasujące końcowe dwukropki. Plik PDF: wgraj w „Media” i wklej link. Wygląd sprawdzaj po przebudowaniu strony (Podgląd). Puste = strona angielska pokaże treść polską."
     type: code
     options:
       format: markdown
+  - name: format_tresci
+    label: Format treści
+    type: string
+    hidden: true
+    default: jawne
   - name: opis
-    label: Krótki opis (pod tytułem i w Google)
+    label: Krótki opis (Google i podgląd linku)
+    description: Na samej stronie się nie wyświetla (baner pokazuje tytuł). Puste = ogólny opis serwisu.
     type: text
   - name: opis_en
-    label: 'EN: opis'
+    label: 'Krótki opis EN'
     type: text
   - name: haslo
     label: Hasło na banerze (jedna linia; liczby w banerze pokażą się tylko razem z hasłem)
     type: string
+    hidden: true
   - name: haslo_en
-    label: 'EN: hasło na banerze'
+    label: 'Hasło na banerze EN'
     type: string
+    hidden: true
   - name: pasek_boczny
     label: 'Prawy pasek: spis „Na tej stronie”, menu działu czy oba (puste = domyślnie tylko spis)'
     type: select
@@ -651,8 +604,10 @@ content:
     type: boolean
     default: false
     description: 'Włączone: listy w treści stają się blokami (kafelki, oś kroków, kontakty, lista plików, rozwijane pytania) — opis przy polu „Treść”. Wyłączone: zwykłe listy.'
+    hidden: true
 - name: o-stronie
   label: O stronie
+  description: Tekst strony „O stronie” (link w stopce). Treść w jawnym Markdownie, jak w Studiach.
   type: file
   path: src/content/strony/o-stronie.md
   format: yaml-frontmatter
@@ -661,54 +616,42 @@ content:
     label: Tytuł
     type: string
     required: true
+  - name: tytul_en
+    label: Tytuł EN
+    type: string
   - name: body
     label: Treść
     type: code
     options:
       format: markdown
     description: |-
-      Piszesz jak w zwykłym edytorze; akapity oddziela Enter. Nagłówek 2 = nowa sekcja (pojawi się w spisie „Na tej stronie”).
-
-      Gdy włączone jest pole „Bloki” (niżej), kilka układów strona rozpoznaje sama:
-
-      • Punkt listy zaczynający się pogrubieniem = kafelek.
-
-      • Lista numerowana z pogrubionym początkiem = oś kroków.
-
-      • Punkt z rolą kursywą i nazwiskiem pogrubionym = kontakt.
-
-      • Lista samych linków = lista plików (PDF / strona).
-
-      • Nagłówek 3 zakończony znakiem „?” = rozwijane pytanie.
-
-      • Tekst nad listą (Seminaria, Konferencje, Aktualności…): lista stoi pod całym tekstem, chyba że jest kotwica — np. na stronie Publikacje tekst pod nagłówkiem 2 „Czasopisma redagowane w Instytucie” stoi nad listą czasopism.
-
-      • Plik PDF: wgraj w „Media” i wklej link.
-
-      • Akapit zaczynający się od dwuliterowego skrótu z kropką („Np.”, „Dr.”, „No.”) edytor zapisze jako listę numerowaną „1.” — zacznij akapit inaczej albo pogrub skrót.
-
-      Więcej: ściągawka edytora (dok/sciagawka-edytora.md w Web-Core).
-  - name: tytul_en
-    label: Tytuł EN
-    type: string
+      Jawny Markdown: ## rozpoczyna sekcję i pozycję spisu; {#id} zachowuje adres sekcji. Zwykły tekst jest prozą domyślnie; nie wymaga otaczających znaczników. Specjalne układy wymagają znaczników, np. :::kafelki, :::etapy, :::zakladki. Komentarze <!-- … --> objaśniają bloki; na stronie ich nie widać. Zachowaj pasujące końcowe dwukropki. Plik PDF: wgraj w „Media” i wklej link. Wygląd sprawdzaj po przebudowaniu strony (Podgląd).
   - name: tresc_en
     label: Treść EN
-    description: Cała strona po angielsku, w tym samym układzie co Treść (nagłówki sekcji po angielsku). Puste = strona angielska pokaże treść polską.
+    description: "Jawny Markdown: ## rozpoczyna sekcję i pozycję spisu; {#id} zachowuje adres sekcji. Zwykły tekst jest prozą domyślnie; nie wymaga otaczających znaczników. Specjalne układy wymagają znaczników, np. :::kafelki, :::etapy, :::zakladki. Komentarze <!-- … --> objaśniają bloki; na stronie ich nie widać. Zachowaj pasujące końcowe dwukropki. Plik PDF: wgraj w „Media” i wklej link. Wygląd sprawdzaj po przebudowaniu strony (Podgląd). Puste = strona angielska pokaże treść polską."
     type: code
     options:
       format: markdown
+  - name: format_tresci
+    label: Format treści
+    type: string
+    hidden: true
+    default: jawne
   - name: opis
-    label: Krótki opis (pod tytułem i w Google)
+    label: Krótki opis (Google i podgląd linku)
+    description: Na samej stronie się nie wyświetla (baner pokazuje tytuł). Puste = ogólny opis serwisu.
     type: text
   - name: opis_en
-    label: 'EN: opis'
+    label: 'Krótki opis EN'
     type: text
   - name: haslo
     label: Hasło na banerze (telefon)
     type: string
+    hidden: true
   - name: haslo_en
-    label: 'EN: hasło na banerze'
+    label: 'Hasło na banerze EN'
     type: string
+    hidden: true
   - name: pasek_boczny
     label: 'Prawy pasek: spis „Na tej stronie”, menu działu czy oba (puste = domyślnie tylko spis)'
     type: select
@@ -727,3 +670,4 @@ content:
     type: boolean
     default: false
     description: 'Włączone: listy w treści stają się blokami (kafelki, oś kroków, kontakty, lista plików, rozwijane pytania) — opis przy polu „Treść”. Wyłączone: zwykłe listy.'
+    hidden: true

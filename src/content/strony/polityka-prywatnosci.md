@@ -6,6 +6,8 @@ opis_en: "What data the Mathematical Institute website collects."
 haslo: "Jakie dane zbieramy i po co"
 haslo_en: "What data we collect and why"
 tresc_en: |
+  <!-- UKŁAD JAWNY: ## rozpoczyna sekcję w spisie. Nazwę można zmieniać; {#id} zachowuje adres. Bloki :::nazwa … ::: sterują wyglądem; komentarze są tylko instrukcjami dla redaktora. -->
+
   > **Draft** to be approved by the University of Wrocław.
 
   - The site **does not use cookies** and does not track visitors.
@@ -16,7 +18,7 @@ tresc_en: |
   - The theme choice (light or dark) is stored only in your browser (localStorage) and is never sent anywhere.
   - The Google map on the Institute page (Contact and getting here) loads only after you click „Show Google map”; from then on Google (Google Maps) may set its own cookies. The choice is remembered in your browser (localStorage).
 
-  ## Seminar email notifications
+  ## Seminar email notifications {#seminar-email-notifications}
 
   - If you sign up on a seminar page, we store your email address, the seminar you chose and the dates of signing up, confirming and unsubscribing.
   - The address is used **only** to send emails about new talks in that seminar. It is not shared with anyone and is not used for any other purpose.
@@ -26,7 +28,9 @@ tresc_en: |
 
   Questions: [dyrekcja@math.uni.wroc.pl](mailto:dyrekcja@math.uni.wroc.pl).
 opublikowany: true
+format_tresci: jawne
 ---
+<!-- UKŁAD JAWNY: ## rozpoczyna sekcję w spisie. Nazwę można zmieniać; {#id} zachowuje adres. Bloki :::nazwa … ::: sterują wyglądem; komentarze są tylko instrukcjami dla redaktora. -->
 
 > **Wersja robocza** do zatwierdzenia przez Uniwersytet Wrocławski.
 
@@ -38,7 +42,7 @@ opublikowany: true
 - Wybór trybu jasnego lub ciemnego jest zapisywany wyłącznie w Twojej przeglądarce (localStorage) i nigdzie nie jest wysyłany.
 - Mapa Google na stronie Instytutu (Kontakt i dojazd) ładuje się dopiero po kliknięciu „Pokaż mapę Google”; od tej chwili Google (Google Maps) może zapisywać własne pliki cookies. Wybór jest zapamiętywany w Twojej przeglądarce (localStorage).
 
-## Powiadomienia e-mail o seminariach
+## Powiadomienia e-mail o seminariach {#powiadomienia-e-mail-o-seminariach}
 
 - Jeśli zapiszesz się na stronie seminarium, przechowujemy Twój adres e-mail, wybrane seminarium oraz daty zapisu, potwierdzenia i wypisania.
 - Adres służy **wyłącznie** do wysyłania wiadomości o nowych referatach w tym seminarium. Nie przekazujemy go nikomu i nie używamy w innym celu.

@@ -1,15 +1,10 @@
 {
   "baner": {
     "zdjecie": "/pliki/baner/kampus-zmierzch.jpg",
-    "zdjecie_male": "/pliki/baner/kampus-zmierzch-1200.jpg",
-    "zdjecie_telefon": "/pliki/baner/instytut-telefon.jpg",
     "opis": "Kampus przy placu Grunwaldzkim o zmierzchu: budynek Instytutu Matematycznego wśród drzew, nad Odrą",
     "opis_en": "The campus at plac Grunwaldzki at dusk: the Mathematical Institute building among trees, by the Oder",
-    "podpis": "Fot. fotopolska.eu",
-    "podpis_en": "Photo: fotopolska.eu",
     "podpis_telefon": "",
-    "podpis_telefon_en": "",
-    "kadr": "center 40%"
+    "podpis_telefon_en": ""
   },
   "logo": "",
   "haslo": "Badania, studia i popularyzacja",
@@ -18,23 +13,6 @@
   "wstep_en": "Research, seminars and mathematics programmes at the Faculty of Mathematics and Computer Science, University of Wrocław.",
   "szukaj_haslo": "Osoby, referaty i ogłoszenia",
   "szukaj_haslo_en": "People, talks and announcements",
-  "przyciski": [
-    {
-      "etykieta": "Dla kandydatów",
-      "etykieta_en": "Prospective students",
-      "adres": "https://studia-wmi.uwr.edu.pl/"
-    },
-    {
-      "etykieta": "Dla studentów",
-      "etykieta_en": "Students",
-      "adres": "/studia"
-    },
-    {
-      "etykieta": "Dla naukowców",
-      "etykieta_en": "Researchers",
-      "adres": "/nauka"
-    }
-  ],
   "studia": {
     "tytul": "Studiuj matematykę we Wrocławiu",
     "tytul_en": "Study mathematics in Wrocław",
@@ -140,23 +118,23 @@
     "zdjecia": {
       "instytut": {
         "zdjecie": "/pliki/naglowki/instytut.jpg",
-        "kadr": "center 45%"
+        "kadr": "50% 42%"
       },
       "nauka": {
         "zdjecie": "/pliki/naglowki/nauka.jpg",
-        "kadr": "center 40%"
+        "kadr": "50% 30%"
       },
       "studia": {
         "zdjecie": "/pliki/naglowki/studia.jpg",
-        "kadr": "center 35%"
+        "kadr": "50% 40%"
       },
       "aktualnosci": {
-        "zdjecie": "/pliki/naglowki/aktualnosci.jpg",
-        "kadr": "center 40%"
+        "zdjecie": "/pliki/naglowki/aktualnosci-skok.jpg",
+        "kadr": "48% 52%"
       },
       "popularyzacja": {
         "zdjecie": "/pliki/naglowki/popularyzacja.jpg",
-        "kadr": "center 50%"
+        "kadr": "50% 40%"
       }
     }
   }
