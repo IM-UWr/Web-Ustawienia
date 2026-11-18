@@ -177,15 +177,7 @@
           "opis": "matematyka, SIAD, ISIM, doktorat",
           "opis_en": "mathematics, SIAD, ISIM, PhD",
           "kierunki": true,
-          "linki": [
-            {
-              "etykieta": "Studia podyplomowe",
-              "etykieta_en": "Postgraduate studies",
-              "opis": "kwalifikacje do nauczania",
-              "opis_en": "teaching qualifications",
-              "adres": "/studia/podyplomowe"
-            }
-          ]
+          "linki": []
         },
         {
           "nazwa": "Na co dzień",

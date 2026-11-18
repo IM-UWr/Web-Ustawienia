@@ -109,7 +109,7 @@
         "nazwa": "Nauczanie matematyki",
         "poziom": "Podyplomowe",
         "opis": "Studia kwalifikacyjne, 3 semestry.",
-        "w_menu": false,
+        "w_menu": true,
         "na_stronie_glownej": true,
         "nazwa_menu_en": "Postgraduate studies",
         "opis_menu_en": "teaching qualifications",
