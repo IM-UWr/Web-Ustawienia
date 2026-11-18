@@ -182,8 +182,8 @@
         {
           "nazwa": "Na co dzień",
           "nazwa_en": "Everyday",
-          "opis": "plan, kalendarz, pierwszy rok, tutornia",
-          "opis_en": "timetable, calendar, first year, tutoring",
+          "opis": "zajęcia, kalendarz, pierwszy rok, tutornia",
+          "opis_en": "classes, calendar, first year, tutoring",
           "kierunki": false,
           "linki": [
             {
