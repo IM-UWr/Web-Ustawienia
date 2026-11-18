@@ -257,8 +257,8 @@ content:
         label: Link do rekrutacji
         type: string
       - name: kierunki
-        label: Kierunki w menu „Studia” i kafelki na stronie głównej (kolejność = kolejność na liście; kierunek spoza listy pojawi się sam na końcu)
-        description: Kierunek z sekcji Kierunki (Web-Studia) wpisujesz adresem /studia/<nazwa pliku>, np. /studia/matematyka; puste pola biorą wtedy pełną nazwę kierunku. Pozycja z innym adresem (np. studia podyplomowe) to zwykły kafelek albo link.
+        label: Kierunki w menu „Studia” i kafelki na stronie głównej
+        description: "Tylko pozycje z tej listy są w menu „Studia” (komputer i telefon), na stronie /studia i w kafelkach na stronie głównej, w kolejności listy. Nowy kierunek pojawi się w menu i kafelkach dopiero po dodaniu go tutaj. Strona pokazuje pola tak, jak są wpisane: puste pole zostaje puste."
         type: object
         list:
           collapsible:
@@ -266,20 +266,32 @@ content:
             summary: "{nazwa}"
         fields:
         - name: adres
-          label: Adres (np. /studia/matematyka)
+          label: Adres
+          description: "Adres strony kierunku: /studia/ i nazwa pliku z Web-Studia → Kierunki, np. /studia/matematyka, /studia/podyplomowe."
+          type: string
+          required: true
+        - name: nazwa_menu
+          label: Nazwa w menu
+          description: "Nazwa w menu „Studia” i na stronie /studia, np. Matematyka, Studia podyplomowe. Sztuczną inteligencję w analizie danych strona skraca do SIAD."
+          type: string
+          required: true
+        - name: opis_menu
+          label: Opis w menu
+          description: "Krótki opis pod nazwą w menu „Studia”, np. I i II stopień, pięć specjalności."
           type: string
           required: true
         - name: nazwa
-          label: Nazwa w menu i na kafelku (puste = pełna nazwa kierunku)
+          label: Nazwa na kafelku
+          description: "Nazwa na kafelku na stronie głównej, np. Matematyka, Nauczanie matematyki."
           type: string
+          required: true
         - name: poziom
-          label: 'Kafelek: napis nad nazwą (np. Kierunek, III stopień; puste przy kierunku = Kierunek)'
+          label: Napis nad nazwą na kafelku
+          description: "Np. I i II stopień, Kierunek, III stopień, Podyplomowe. Puste: kafelek bez napisu."
           type: string
         - name: opis
-          label: 'Kafelek: jedno krótkie zdanie'
-          type: string
-        - name: opis_menu
-          label: Krótki opis w menu „Studia” (puste = przy krótkiej nazwie pełna nazwa, inaczej bez opisu)
+          label: Zdanie na kafelku
+          description: "Jedno krótkie zdanie pod nazwą, np. Nowy program studiów od roku 2026/27. Puste: kafelek bez zdania."
           type: string
         - name: w_menu
           label: Pokaż w menu „Studia”
@@ -289,18 +301,24 @@ content:
           label: Pokaż kafelek na stronie głównej
           type: boolean
           default: true
-        - name: nazwa_en
-          label: 'EN: nazwa'
-          type: string
-        - name: poziom_en
-          label: 'EN: napis nad nazwą'
-          type: string
-        - name: opis_en
-          label: 'EN: zdanie na kafelku'
+        - name: nazwa_menu_en
+          label: Nazwa w menu EN
           type: string
         - name: opis_menu_en
-          label: 'EN: krótki opis w menu'
+          label: Opis w menu EN
           type: string
+        - name: nazwa_en
+          label: Nazwa na kafelku EN
+          type: string
+        - name: poziom_en
+          label: Napis nad nazwą na kafelku EN
+          type: string
+        - name: opis_en
+          label: Zdanie na kafelku EN
+          type: string
+        - name: pozycja
+          type: boolean
+          hidden: true
     - name: kontakt
       label: Dane kontaktowe (stopka)
       type: object
