@@ -348,7 +348,7 @@ content:
         hidden: true
   - name: skroty
     label: Kafelki „Na skróty”
-    description: Tylko właściciel. Pierwsze cztery kafelki widać na stronie głównej, w pasku „Szybki dostęp” pod okładką.
+    description: Tylko właściciel. Pierwsze pięć kafelków widać na stronie głównej, w pasku „Szybki dostęp” pod okładką. Kafelki z adresem /studia/rok-akademicki i /studia/tutornia mają podpis na żywo (dzień zajęć, dyżur w tutorni).
     type: file
     path: src/data/skroty.json
     format: json

@@ -182,8 +182,8 @@
         {
           "nazwa": "Na co dzień",
           "nazwa_en": "Everyday",
-          "opis": "plan, kalendarz, zajęcia, pierwszy rok",
-          "opis_en": "timetable, calendar, classes, first year",
+          "opis": "plan, kalendarz, pierwszy rok, tutornia",
+          "opis_en": "timetable, calendar, first year, tutoring",
           "kierunki": false,
           "linki": [
             {
@@ -213,6 +213,13 @@
               "opis": "pierwsze kroki na studiach",
               "opis_en": "first steps at university",
               "adres": "/studia/pierwszy-rok"
+            },
+            {
+              "etykieta": "Tutornia",
+              "etykieta_en": "Tutoring room",
+              "opis": "dyżury starszych studentów",
+              "opis_en": "help from senior students",
+              "adres": "/studia/tutornia"
             }
           ]
         },
