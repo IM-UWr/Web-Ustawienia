@@ -8,8 +8,8 @@
         {
           "nazwa": "Ludzie",
           "nazwa_en": "People",
-          "opis": "władze i pracownicy",
-          "opis_en": "management and staff",
+          "opis": "władze, pracownicy, historia",
+          "opis_en": "management, staff, history",
           "kierunki": false,
           "linki": [
             {
@@ -25,6 +25,13 @@
               "opis": "spis osób, pokoje, kontakt",
               "opis_en": "people, rooms, contact",
               "adres": "/pracownicy"
+            },
+            {
+              "etykieta": "Warto wiedzieć",
+              "etykieta_en": "Highlights",
+              "opis": "profesorowie, odkrycia, nagrody",
+              "opis_en": "professors, discoveries, awards",
+              "adres": "/instytut/warto-wiedziec"
             }
           ]
         },
@@ -54,17 +61,10 @@
         {
           "nazwa": "Więcej",
           "nazwa_en": "More",
-          "opis": "ludzie i historia, informatyka, biblioteka",
-          "opis_en": "people and history, IT, library",
+          "opis": "informatyka i biblioteka",
+          "opis_en": "IT and library",
           "kierunki": false,
           "linki": [
-            {
-              "etykieta": "Warto wiedzieć",
-              "etykieta_en": "Highlights",
-              "opis": "sylwetki, nagrody, historie",
-              "opis_en": "people, awards, stories",
-              "adres": "/instytut/warto-wiedziec"
-            },
             {
               "etykieta": "Infrastruktura informatyczna",
               "etykieta_en": "IT infrastructure",
