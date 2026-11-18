@@ -54,10 +54,17 @@
         {
           "nazwa": "Więcej",
           "nazwa_en": "More",
-          "opis": "informatyka i biblioteka",
-          "opis_en": "IT and library",
+          "opis": "ludzie i historia, informatyka, biblioteka",
+          "opis_en": "people and history, IT, library",
           "kierunki": false,
           "linki": [
+            {
+              "etykieta": "Warto wiedzieć",
+              "etykieta_en": "Highlights",
+              "opis": "sylwetki, nagrody, historie",
+              "opis_en": "people, awards, stories",
+              "adres": "/instytut/warto-wiedziec"
+            },
             {
               "etykieta": "Infrastruktura informatyczna",
               "etykieta_en": "IT infrastructure",
